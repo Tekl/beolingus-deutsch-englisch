@@ -1,16 +1,16 @@
 # Changelog
 
-Sorry, there’s no english changelog.
+Sorry, there’s no english changelog.
 
-## [v2019.04.10]
+## [v2019.04.15]
 
 ### Hinzugefügt (Added)
 
-- Für die einfache Installation des Plug-ins per Doppelklick ist nun ein Installer enthalten. Dieser kann das Plug-in auch aktualisieren und deinstallieren.
 - Einstellung hinzugefügt, über die man die Flaggen-Symbol ausschalten kann.
 
 ### Geändert (Changed)
 
+- Das Plug-ins wird wieder über ein Installations-Paket für alle Benutzer installiert. Über „Ort für die Installation ändern“ lässt es sich weiterhin für einzelne Benutzer installieren.
 - Datenbestand vom 30.03.2019 mit 777685 Einträgen.
 - Update für macOS 10.14 Mojave mit Unterstützung des Darkmode.
 - Flaggen-Icons durch Emojis ersetzt und somit die Dateigröße reduziert.

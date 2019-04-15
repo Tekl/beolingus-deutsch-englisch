@@ -129,7 +129,7 @@ for line in sorted(sourcefile_content):
     #speedup
     if speedvar != "":
         if speedvar in line: #[:6]:
-            #print line
+            print line
             pass
         else:
             continue
@@ -180,7 +180,7 @@ for line in sorted(sourcefile_content):
             translations = translations.replace(u"<",u"‹")
             translations = translations.replace(u">",u"›")
             translations = temp_entities(translations)
-            
+
             #print translations
 
             translations = re.sub(' /([^/;]+)\s*;\s*([^/;]+)/', u' /\\1, \\2/',translations)
@@ -309,7 +309,7 @@ for line in sorted(sourcefile_content):
                     formatted[id] = formattedsource
                     dvalueSplit = dvalue.split()
                     seealsos[id] = ""
-                    
+
                 #print dvalue
                 #print " "+dvalue2
 
@@ -501,7 +501,7 @@ for id in sort_by_value(lengths):
 %s
 %s
 <div class="c" d:priority="2"><span><a href="https://www.beolingus.de/dings.cgi?query=%s">Aus BeoLingus.de</a> · © %s TU Chemnitz</span></div>
-</d:entry>""" % (entities(id), real_entities(titles[id]), entities(dvalues[id]), real_entities(formatted[id]), real_entities(result[id]), real_entities(seealsos[id]), real_entities(linkwords[id]), downloadfileyear) ) )
+</d:entry>""" % (entities(id), real_entities(titles[id]), real_entities(dvalues[id]), real_entities(formatted[id]), real_entities(result[id]), real_entities(seealsos[id]), real_entities(linkwords[id]), downloadfileyear) ) )
 
 destfile.write( u"""
 <d:entry id="front_back_matter" d:title="Vorderer/hinterer Teil">
@@ -536,9 +536,9 @@ destfile.close()
 print "\nHeruntergeladene Datei wird gelöscht ..."
 os.system('rm '+dict+'.txt')
 
-print "\nVersionsnummern werdeb angepasst ..."
+print "\nVersionsnummern werden angepasst ..."
 
-rtfFiles = ['LIESMICH.rtfd/TXT.rtf','README.rtfd/TXT.rtf','LIESMICH.md','README.md','Makefile']
+rtfFiles = ['installer/finishup_de.rtfd/TXT.rtf','installer/finishup_en.rtfd/TXT.rtf','installer/LIESMICH.rtfd/TXT.rtf','installer/README.rtfd/TXT.rtf','LIESMICH.md','README.md','Makefile']
 for filename in rtfFiles:
 	print filename
 	if '.rtf' in filename:
@@ -551,6 +551,7 @@ for filename in rtfFiles:
 	pmdoc = re.sub(" v20\d+.\d+.\d+\"", " v"+ bundleVersion+"\"", pmdoc)
 	if filename == 'Makefile':
 		pmdoc = re.sub("([_ ])v20\d+.\d+.\d+", "\\1v"+ bundleVersion+"", pmdoc)
+		pmdoc = re.sub("/20\d+.\d+.\d+/", "/"+ bundleVersion+"/", pmdoc)
 	pmdoc = re.sub(u"20\d\d Wolfgang Reszel", datetime.datetime.today().strftime("%Y")+" Wolfgang Reszel", pmdoc)
 	pmdocFile.close()
 	if '.rtf' in filename:
