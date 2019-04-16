@@ -1,4 +1,4 @@
 releases
 BeoLingus De-En.xml
-objects
-**/.DS_Store
+#**/.DS_Store
+#cleanup
