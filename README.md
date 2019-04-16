@@ -1,8 +1,12 @@
-BeoLingus German-English Dictionary Plugin
+🇩🇪 [Deutsche Liesmich-Datei](LIESMICH.md)
+
+![](images/icons/dictplug_48.png)BeoLingus German-English Dictionary Plugin
 ------------------------------------------
 
 _Version: 2019.04.15 - Mac OS X 10.6 to macOS 10.14_<br>
 _Copyright © 2019 Wolfgang Reszel and TU Chemnitz_
+
+![](images/screenshots/BeoLingus_Screen_1.png)
 
 This plugin extends Apple's Dictionary Application with a German-English dictionary.
 
@@ -10,12 +14,12 @@ The content of this plugin is based on the online dictionary [www.beolingus.de](
 
 The Python script to convert the BeoLingus dictionary into a dictionary plugin was developed by Wolfgang Reszel.
 
-**Updates and further informations:** [www.tekl.de](https://www.tekl.de).<br>
+**Website with further informations:** [www.tekl.de](https://www.tekl.de).<br>
 **Support and source code:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)<br>**Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)
 
 ### Installation
 
-1. Download the current Version of the dictionary plugin:<br>[BeoLingus_Deutsch-Englisch.dmg]()
+1. Download the current Version of the dictionary plugin:<br>[BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest)
 
 2. Open the disk image and start the Installer “BeoLingus Deutsch-Englisch Installation”. Follow its instructions.
 
@@ -24,12 +28,12 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 ### Manual installation for Mac OS X 10.7 or newer
 
 1. Download the plain dictionary file:<br>[BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/raw/master/objects/Dictionaries/BeoLingus Deutsch-Englisch.dictionary)
-2. Launch the program “Dictionary.app” und execute the command “Open dictionary folder” from the File menu.
+2. Launch the program “Dictionary.app” und execute the command “Open dictionary folder” from the File menu.<br>
    ![Schritt 1](images/manual installation/dict-inst-1cursor.png)
-1. The Finder will open a window with the folder “Dictionaries”. Drag and drop the downloaded plugin into this Finder window.
-  ![Schritt 2](images/manual installation/dict-inst-2cursor.png)
-2. Quit and restart the Dictionary-App, so it will se the newly installed plugin. Open the Preferences of Dictionary.app (⌘+Comma), scroll to the entry “OpenThesaurus Deutsch” and click the checkbox.
-  ![Schritt 3](images/manual installation/dict-inst-3cursor.png)
+1. The Finder will open a window with the folder “Dictionaries”. Drag and drop the downloaded plugin into this Finder window.<br>
+    ![Schritt 2](images/manual installation/dict-inst-2cursor.png)
+2. Quit and restart the Dictionary-App, so it will se the newly installed plugin. Open the Preferences of Dictionary.app (⌘+Comma), scroll to the entry “OpenThesaurus Deutsch” and click the checkbox.<br>
+    ![Schritt 3](images/manual installation/dict-inst-3cursor.png)
 
 ### Manual installation for Mac OS X 10.6
 

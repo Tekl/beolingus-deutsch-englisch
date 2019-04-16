@@ -6,7 +6,7 @@ Sorry, there’s no english changelog.
 
 ### Hinzugefügt (Added)
 
-- Einstellung hinzugefügt, über die man die Flaggen-Symbol ausschalten kann.
+- Einstellung hinzugefügt, über die man die Flaggen-Symbole ausschalten kann.
 
 ### Geändert (Changed)
 

@@ -6,4 +6,5 @@ objects/entry_body_list.txt
 objects/normalized_key_body_list.txt
 objects/referred_entry_body_list.txt
 objects/referred_id_list.txt
-OtherResources/Images/.DS_Store
+**/.DS_Store
+
