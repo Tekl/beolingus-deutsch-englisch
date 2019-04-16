@@ -1,6 +1,6 @@
 🇩🇪 [Deutsche Liesmich-Datei](LIESMICH.md)
 
-![](images/icons/dictplug_48.png)BeoLingus German-English Dictionary Plugin
+BeoLingus German-English Dictionary Plugin
 ------------------------------------------
 
 _Version: 2019.04.15 - Mac OS X 10.6 to macOS 10.14_<br>
