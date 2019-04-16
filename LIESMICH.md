@@ -4,7 +4,7 @@ BeoLingus Deutsch-Englisch Lexikon-Plug-in
 _Version: 2019.04.15 - Mac OS X 10.6 bis macOS 10.14_<br>
 _Copyright © 2019 Wolfgang Reszel und TU Chemnitz_
 
-![](images/screenshots/BeoLingus_Screen_1.png)
+![Screenshot](images/screenshots/BeoLingus_Screen_1.png)
 
 Dieses Plug-in erweitert die Lexikon-App von macOS um ein  Deutsch-Englisch-Wörterbuch.
 
@@ -13,7 +13,8 @@ Der vom Plug-in bereitgestellte Thesaurus basiert auf auf dem Online-Wörterbuch
 Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lexikon-Plug-in wurde von Wolfgang Reszel entwickelt.
 
 **Website mit weiterführenden Informationen:** [www.tekl.de](https://www.tekl.de).<br>
-**Support und Quellcode:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)<br>**Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)
+**Support und Quellcode:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)<br>**Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)<br>
+**Spende:** DE35430609674091450100 oder [PayPal](https://www.paypal.me/WolfgangReszel) 
 
 ### Installation
 
