@@ -1,4 +1,4 @@
-# Changelog
+# Changelog für BeoLingus Deutsch-Englisch
 
 Sorry, there’s no english changelog.
 
@@ -10,10 +10,10 @@ Sorry, there’s no english changelog.
 
 ### Geändert (Changed)
 
-- Das Plug-ins wird wieder über ein Installations-Paket für alle Benutzer installiert. Über „Ort für die Installation ändern“ lässt es sich weiterhin für einzelne Benutzer installieren.
+- Das Plug-in wird wieder über ein Installations-Paket für alle Benutzer installiert. Über „Ort für die Installation ändern“ lässt es sich weiterhin für einzelne Benutzer installieren.
 - Datenbestand vom 30.03.2019 mit 777685 Einträgen.
 - Update für macOS 10.14 Mojave mit Unterstützung des Darkmode.
-- Flaggen-Icons durch Emojis ersetzt und somit die Dateigröße reduziert.
+- Flaggen-Icons durch Emojis ersetzt.
 
 ### Entfernt (Removed)
 
