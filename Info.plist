@@ -9,17 +9,15 @@
 	<key>CFBundleName</key>
 	<string>BeoLingus Deutsch-Englisch</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2019.04.15</string>
+	<string>2019.04.24</string>
 	<key>CFBundleVersion</key>
-	<string>2019.04.15</string>
+	<string>2019.04.24</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>Copyright © 1995-2019 TU Chemnitz, www.beolingus.de / Wolfgang Reszel, www.tekl.de</string>
+	<string>Content: © 1995-2019 TU Chemnitz, www.beolingus.de&lt;br/&gt;Plug-in: © 2019 Wolfgang Reszel, www.tekl.de</string>
 	<key>DCSDictionaryDefaultPrefs</key>
 	<dict>
-		<key>CheckForUpdates</key>
-		<string>2</string>
-		<key>Show-Flags</key>
-		<true/>
+		<key>ShowFlag</key>
+		<string>1</string>
 		<key>ShowCopyright</key>
 		<string>1</string>
 	</dict>
@@ -29,11 +27,13 @@
 	<string>Wolfgang Reszel (www.tekl.de)</string>
 	<key>DCSDictionaryPrefsHTML</key>
 	<string>Deutsch-Englisch_prefs.html</string>
+	<key>DCSDictionaryUseSystemAppearance</key>
+	<true/>
 	<key>DCSDictionaryXSL</key>
 	<string>Deutsch-Englisch.xsl</string>
 	<key>LSHasLocalizedDisplayName</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Content: © 1995-2019 TU Chemnitz, www.beolingus.de&lt;br/&gt;Plug-in: © 2019 Wolfgang Reszel, www.tekl.de</string>
+	<string>Copyright © 1995-2019 TU Chemnitz, www.beolingus.de / Wolfgang Reszel, www.tekl.de</string>
 </dict>
 </plist>
