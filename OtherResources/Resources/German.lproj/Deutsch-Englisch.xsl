@@ -23,7 +23,7 @@
 	</xsl:if>
 </xsl:template>
 <xsl:template match="span[@class='flag']">
-	<xsl:if test="$Show-Flags = '1'">
+	<xsl:if test="$ShowFlag = '1'">
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()" />
 		</xsl:copy>
