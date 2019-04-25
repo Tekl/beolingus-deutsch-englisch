@@ -15,7 +15,7 @@ Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lex
 **Website mit weiterführenden Informationen:** [www.tekl.de](https://www.tekl.de).<br>
 **Support und Quellcode:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)<br>
 **Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)<br>
-**Spende:** ***REMOVED***[PayPal](https://www.paypal.me/WolfgangReszel) 
+**Spende:** [PayPal](https://www.paypal.me/WolfgangReszel) 
 
 ### Installation
 
