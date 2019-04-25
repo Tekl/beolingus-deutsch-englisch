@@ -69,7 +69,7 @@ StopWordsEN_2 = "he/she|he/she/it|i/he/she/it|i/he/she|i|he|she|it|they|we|his|h
 Flags = {'de':u'🇩🇪','en':u'🇬🇧'}
 
 print "Lexikon-Plugin ("+dictFull+") auf Basis von Beolingus.de"
-print "CreateXML v2.0.0 von Wolfgang Reszel, 2019-04-10"
+print "CreateXML v2.0.1 von Wolfgang Reszel, 2019-04-25"
 print
 morphology = {}
 for file in ["morphology-cache.txt","../Morphologie_Deutsch/morphology-cache.txt"]:
@@ -538,7 +538,7 @@ os.system('rm '+dict+'.txt')
 
 print "\nVersionsnummern werden angepasst ..."
 
-rtfFiles = ['installer/finishup_de.rtfd/TXT.rtf','installer/finishup_en.rtfd/TXT.rtf','installer/LIESMICH.rtfd/TXT.rtf','installer/README.rtfd/TXT.rtf','LIESMICH.md','README.md','Makefile']
+rtfFiles = ['installer/BeoLingus Deutsch-Englisch.pkgproj','installer/finishup_de.rtfd/TXT.rtf','installer/finishup_en.rtfd/TXT.rtf','installer/LIESMICH.rtfd/TXT.rtf','installer/README.rtfd/TXT.rtf','LIESMICH.md','README.md','Makefile']
 for filename in rtfFiles:
 	print filename
 	if '.rtf' in filename:
@@ -547,8 +547,9 @@ for filename in rtfFiles:
 		pmdocFile = codecs.open(filename,'r','UTF-8')
 	pmdoc = pmdocFile.read()
 	pmdoc = re.sub("Version: .\d+.\d+.\d+", "Version: "+ bundleVersion, pmdoc)
+	pmdoc = re.sub(">20\d+.\d+.\d+<", ">"+ bundleVersion+"<", pmdoc)
 	pmdoc = re.sub(" 20\d+.\d+.\d+\"", " "+ bundleVersion+"\"", pmdoc)
-	pmdoc = re.sub(" v20\d+.\d+.\d+\"", " v"+ bundleVersion+"\"", pmdoc)
+	pmdoc = re.sub(" v20\d+.\d+.\d+", " v"+ bundleVersion, pmdoc)
 	if filename == 'Makefile':
 		pmdoc = re.sub("([_ ])v20\d+.\d+.\d+", "\\1v"+ bundleVersion+"", pmdoc)
 		pmdoc = re.sub("/20\d+.\d+.\d+/", "/"+ bundleVersion+"/", pmdoc)
