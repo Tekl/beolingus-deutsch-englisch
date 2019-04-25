@@ -3,7 +3,7 @@
 BeoLingus German-English Dictionary Plugin
 ------------------------------------------
 
-_Version: 2019.04.15 - Mac OS X 10.6 to macOS 10.14_<br>
+_Version: 2019.04.24 - Mac OS X 10.6 to macOS 10.14_<br>
 _Copyright © 2019 Wolfgang Reszel and TU Chemnitz_
 
 ![Screenshot](images/screenshots/BeoLingus_Screen_1.png)
@@ -15,8 +15,9 @@ The content of this plugin is based on the online dictionary [www.beolingus.de](
 The Python script to convert the BeoLingus dictionary into a dictionary plugin was developed by Wolfgang Reszel.
 
 **Website with further informations:** [www.tekl.de](https://www.tekl.de).<br>
-**Support and source code:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)<br>**Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)<br>
-**Donation:** DE35430609674091450100 or [PayPal](https://www.paypal.me/WolfgangReszel) 
+**Support and source code:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)<br>
+**Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)<br>
+**Donation:** [PayPal](https://www.paypal.me/WolfgangReszel) 
 
 ### Installation
 
