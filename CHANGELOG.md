@@ -2,7 +2,13 @@
 
 Sorry, there’s no english changelog.
 
-## [v2019.04.25]
+## v2020.05.10
+
+### Geändert (Changed)
+
+- Datenbestand vom 09.05.2020 mit 803022 Einträgen.
+
+## v2019.04.25
 
 ### Geändert (Changed)
 
@@ -13,7 +19,7 @@ Sorry, there’s no english changelog.
 - Das Lexikon flackert nun nicht mehr bei der Eingabe von Suchbegriffen im Darkmode von macOS 10.14 Mojave.
 - Absturzursache bei einigen Anwendern in OS X 10.10.5 Yosemite behoben.
 
-## [v2019.04.15]
+## v2019.04.15
 
 ### Hinzugefügt (Added)
 
@@ -31,7 +37,7 @@ Sorry, there’s no english changelog.
 - Da die Updateprüfung auf neueren Versionen von macOS nicht mehr funktioniert, habe ich sie entfernt. Sie funktionierte eh nicht zuverlässig.
 - Obsolete Einstellungen entfernt.
 
-## [v2015.10.08]
+## v2015.10.08
 
 ### Geändert (Changed)
 

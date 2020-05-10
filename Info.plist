@@ -9,11 +9,11 @@
 	<key>CFBundleName</key>
 	<string>BeoLingus Deutsch-Englisch</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2019.04.24</string>
+	<string>2020.05.09</string>
 	<key>CFBundleVersion</key>
-	<string>2019.04.24</string>
+	<string>2020.05.09</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>Content: © 1995-2019 TU Chemnitz, www.beolingus.de&lt;br/&gt;Plug-in: © 2019 Wolfgang Reszel, www.tekl.de</string>
+	<string>Content: © 1995-2020 TU Chemnitz, www.beolingus.de&lt;br/&gt;Plug-in: © 2020 Wolfgang Reszel, www.tekl.de</string>
 	<key>DCSDictionaryDefaultPrefs</key>
 	<dict>
 		<key>ShowFlag</key>
@@ -34,6 +34,6 @@
 	<key>LSHasLocalizedDisplayName</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 1995-2019 TU Chemnitz, www.beolingus.de / Wolfgang Reszel, www.tekl.de</string>
+	<string>Copyright © 1995-2020 TU Chemnitz, www.beolingus.de / Wolfgang Reszel, www.tekl.de</string>
 </dict>
 </plist>
