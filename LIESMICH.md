@@ -33,12 +33,12 @@ Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lex
 ### Manuelle Installation ab Mac OS X 10.7
 
 1. Laden Sie die Wörterbuch-Datei direkt herunter:<br>[BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
-2. Starten Sie das Programm „Lexikon.app“ und führen Sie den Befehl „Lexika-Ordner öffnen“ oder „Ordner Dictionaries öffnen“ im Menü „Ablage“ aus.<br>
-   ![Schritt 1](images/manual installation/dict-inst-1cursor.png)
-3. Es öffnet sich nun ein Finder-Fenster, das den Ordner „Dictionaries“ zeigt. Ziehen Sie das heruntergeladene Plug-in in dieses Finder-Fenster.<br>
-   ![Schritt 2](images/manual installation/dict-inst-2cursor.png)
-4. Beenden und starten Sie die Lexikon-Anwendung, damit sie das neu installierte Plug-in erkennt. Rufen Sie die Einstellungen des Lexikons auf (⌘+Komma), scrollen Sie zum Eintrag „OpenThesaurus Deutsch“ und aktivieren Sie diesen.<br>
-   ![Schritt 3](images/manual installation/dict-inst-3cursor.png)
+2. Starten Sie das Programm „Lexikon.app“ und führen Sie den Befehl „Lexika-Ordner öffnen“ oder „Ordner Dictionaries öffnen“ im Menü „Ablage“ aus.  
+![Schritt 1](images/manual installation/dict-inst-1cursor.png)
+3. Es öffnet sich nun ein Finder-Fenster, das den Ordner „Dictionaries“ zeigt. Ziehen Sie das heruntergeladene Plug-in in dieses Finder-Fenster.  
+![Schritt 2](images/manual installation/dict-inst-2cursor.png)
+4. Beenden und starten Sie die Lexikon-Anwendung, damit sie das neu installierte Plug-in erkennt. Rufen Sie die Einstellungen des Lexikons auf (⌘+Komma), scrollen Sie zum Eintrag „OpenThesaurus Deutsch“ und aktivieren Sie diesen.  
+![Schritt 3](images/manual installation/dict-inst-3cursor.png)
 
 ### Manuelle Installation in Mac OS X 10.6
 
