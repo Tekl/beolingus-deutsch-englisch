@@ -36,11 +36,11 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 
 1. Download the plain dictionary file:<br>[BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
 2. Launch the program “Dictionary.app” und execute the command “Open dictionary folder” from the File menu.  
-![Schritt 1](images/manual installation/dict-inst-1cursor.png)
+![Schritt 1](images/manual%20installation/dict-inst-1cursor.png)
 1. The Finder will open a window with the folder “Dictionaries”. Drag and drop the downloaded plugin into this Finder window.  
-![Schritt 2](images/manual installation/dict-inst-2cursor.png)
+![Schritt 2](images/manual%20installation/dict-inst-2cursor.png)
 2. Quit and restart the Dictionary-App, so it will se the newly installed plugin. Open the Preferences of Dictionary.app (⌘+Comma), scroll to the entry “OpenThesaurus Deutsch” and click the checkbox.  
-![Schritt 3](images/manual installation/dict-inst-3cursor.png)
+![Schritt 3](images/manual%20installation/dict-inst-3cursor.png)
 
 #### Manual installation for Mac OS X 10.6
 
