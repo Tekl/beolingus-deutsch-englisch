@@ -17,19 +17,24 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 **Website with further informations:** [www.tekl.de](https://www.tekl.de).<br>
 **Support and source code:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)<br>
 **Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)<br>
-**Donation:** [PayPal](https://www.paypal.me/WolfgangReszel) 
+**Donation:** [PayPal](https://www.paypal.me/WolfgangReszel)
+
+### Download
+
+- [BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch.dmg) (disk image containing an installer package)
+- [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip) (the plain Dictionary plugin bundle in a ZIP file for manual installation)
 
 ### Installation
 
-1. Download the current Version of the dictionary plugin:<br>[BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/download/2019.04.15/BeoLingus_Deutsch-Englisch.dmg)
+#### Using the installer
 
+1. Download the current Version of the dictionary plugin:<br>[BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch.dmg)
 2. Open the disk image and start the Installer “BeoLingus Deutsch-Englisch Installation”. Follow its instructions.
-
 3. To install the plugin for the current user and not for all users, click on “Change Install Location …” in the installer and select “Install for me only”.
 
-### Manual installation for Mac OS X 10.7 or newer
+#### Manual installation for Mac OS X 10.7 or newer
 
-1. Download the plain dictionary file:<br>[BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/download/2019.04.15/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
+1. Download the plain dictionary file:<br>[BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
 2. Launch the program “Dictionary.app” und execute the command “Open dictionary folder” from the File menu.<br>
    ![Schritt 1](images/manual installation/dict-inst-1cursor.png)
 1. The Finder will open a window with the folder “Dictionaries”. Drag and drop the downloaded plugin into this Finder window.<br>
@@ -37,7 +42,7 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 2. Quit and restart the Dictionary-App, so it will se the newly installed plugin. Open the Preferences of Dictionary.app (⌘+Comma), scroll to the entry “OpenThesaurus Deutsch” and click the checkbox.<br>
     ![Schritt 3](images/manual installation/dict-inst-3cursor.png)
 
-### Manual installation for Mac OS X 10.6
+#### Manual installation for Mac OS X 10.6
 
 1. Download the plain dictionary file:<br>[BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/raw/master/objects/Dictionaries/BeoLingus Deutsch-Englisch.dictionary)
 2. Copy the downloaded plugin into the folder `/Library/Dictionaries` (for all users) or `~/Library/Dictionaries` (for current user). Maybe you have to create the folder first.
