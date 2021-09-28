@@ -3,8 +3,8 @@
 BeoLingus German-English Dictionary Plugin
 ------------------------------------------
 
-_Version: 2020.05.09 - Mac OS X 10.6 to macOS 10.14_  
-_Copyright © 2020 Wolfgang Reszel and TU Chemnitz_
+_Version: 2021.09.27 - OS X 10.11 to macOS 12_  
+_Copyright © 2021 Wolfgang Reszel and TU Chemnitz_
 
 ![Screenshot](images/screenshots/BeoLingus_Screen_1.png)
 
@@ -32,7 +32,7 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 2. Open the disk image and start the Installer “BeoLingus Deutsch-Englisch Installation”. Follow its instructions.
 3. To install the plugin for the current user and not for all users, click on “Change Install Location …” in the installer and select “Install for me only”.
 
-#### Manual installation for Mac OS X 10.7 or newer
+#### Manual installation
 
 1. Download the plain dictionary file:  [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
 2. Launch the program “Dictionary.app” und execute the command “Open dictionary folder” from the File menu.  
@@ -41,13 +41,6 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 ![Schritt 2](images/manual%20installation/dict-inst-2cursor.png)
 2. Quit and restart the Dictionary-App, so it will se the newly installed plugin. Open the Preferences of Dictionary.app (⌘+Comma), scroll to the entry “OpenThesaurus Deutsch” and click the checkbox.  
 ![Schritt 3](images/manual%20installation/dict-inst-3cursor.png)
-
-#### Manual installation for Mac OS X 10.6
-
-1. Download the plain dictionary file:  [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/raw/master/objects/Dictionaries/BeoLingus Deutsch-Englisch.dictionary)
-2. Copy the downloaded plugin into the folder `/Library/Dictionaries` (for all users) or `~/Library/Dictionaries` (for current user). Maybe you have to create the folder first.
-3. Quit and restart the Dictionary-App, so it will se the newly installed plugin. Open the Preferences of Dictionary.app (⌘+Comma), scroll to the entry “OpenThesaurus Deutsch” and click the checkbox.
-4. It could be necessary to re-login/restart or to quit the process “DictionaryPanel” in the Activity Monitor, so the plugin can be used in the dictionary panel (⌃⌘D).
 
 ### Uninstalling
 
