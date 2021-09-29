@@ -662,11 +662,11 @@ for id in sort_by_value(lengths):
 
 destfile.write(u"""
 <d:entry id="front_back_matter" d:title="Vorderer/hinterer Teil">
-    <h1>BeoLingus Deutsch-Englisch</h1>
+    <h1><b>BeoLingus Deutsch-Englisch</b></h1>
     <div><small><b>Version: %s</b></small></div>
     <p>
         <img src="Images/beolingus.png" align="right" style="padding-left:10px" alt=""/>
-        Dieses Wörterbuch basiert auf dem Online-Wörterbuch<br/>
+        Dieses Wörterbuch basiert auf dem Online-Wörterbuch:<br/>
         <a href="https://www.beolingus.de">www.beolingus.de</a> der TU Chemnitz. (Stand: %s, %s Einträge)
     </p>
     <p>

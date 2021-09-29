@@ -3,7 +3,7 @@
 BeoLingus German-English Dictionary Plugin
 ------------------------------------------
 
-_Version: 2021.09.27 - OS X 10.11 to macOS 12_  
+_Version: 2021.09.29 - OS X 10.11 to macOS 12_  
 _Copyright © 2021 Wolfgang Reszel and TU Chemnitz_
 
 ![Screenshot](images/screenshots/BeoLingus_Screen_1.png)

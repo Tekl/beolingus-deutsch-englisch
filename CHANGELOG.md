@@ -2,6 +2,12 @@
 
 Sorry, there’s no english changelog.
 
+## v2021.09.29
+
+### Fehler behoben (Fixed)
+
+- Die Einstellungen waren versehentlich komplett leer (Danke maelcum [#2](https://github.com/Tekl/beolingus-deutsch-englisch/issues/2)).
+
 ## v2021.09.28
 
 ### Hinzugefügt (Added)
