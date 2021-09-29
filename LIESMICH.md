@@ -44,6 +44,40 @@ Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lex
 
 Sie können das Plug-in auch von Hand aus dem Ordner `/Library/Dictionaries` oder `~/Library/Dictionaries` löschen und anschließend die Lexikon-Anwendung neu starten.
 
+### Lexikon-Plug-in via Quellcode selbst generieren
+
+#### Voraussetzungen
+
+- [Xcode](https://apps.apple.com/de/app/xcode/id497799835?mt=12)
+- [Dictionary Development Kit als Teil der Additional Tools](https://developer.apple.com/download/all/?q=Additional%20Tools) (kostenlose Entwickler-Account erforderlich)
+- Das DDK muss in einem der folgenden Pfade installiert sein:
+  - `/Developer/Auxiliary Tools/Dictionary Development Kit`
+  - `/Developer/Utilities/Dictionary Development Kit`
+  - `/Applications/Auxiliary Tools/Dictionary Development Kit`
+  - `/Applications/Additional Tools/Utilities/Dictionary Development Kit`
+  - `/DevTools/Utilities/Dictionary Development Kit`
+  - `/Applications/Utilities/Dictionary Development Kit`
+- Die Xcode Command Line Tools müssen installiert sein: `
+ xcode-select --install`
+- *Optional:* Für das Generieren des Installers benötigt man das kostenlose Tool [Packages](http://s.sudre.free.fr/Software/Packages/about.html)
+- *Optional:* Um das Disk Image automatisch zu erstellen, benötigt man [DMG Canvas](https://www.araelium.com/dmgcanvas) (20 US-$).
+
+#### Generierung im Terminal starten
+
+- Terminal öffnen
+- Mit `cd`in den Ordner `beolingus-deutsch-englisch-master`wechseln.
+- Die Generierung mit `make` starten. Damit wird die aktuelle Wortliste von tu-chemnitz.de heruntergeladen, nach XML konvertiert und dann mit dem DDK in ein Lexikon-Plug-in konvertiert. Die Versionsnummer wird aus dem aktuellen Datum generiert und um **-beta** ergänzt.
+- Die Umwandlung ist recht zeitintensiv und kann dauert mehrere Stunden.
+- Erscheint im Terminal der Prompt, installiert man das fertige Plug-in mit `sudo make install`. Das ist auch erforderlich, um den Installer zu erstellen. Dieser erwartet das Plug-in unter /Library/Dictionaries.
+- Nach der Installation wird das Lexikon automatisch geöffnet und man kann das Plug-in aktivieren und testen.
+- Das make-Kommando versteht folgende weitere Targets:
+  - `make release`generiert das Plug-in ohne Endung „-beta“ bei der Versionsnummer.
+  - `make dmg`packt das installierte **Beta**-Plug-in in einen Installer und diesen in ein Disk Image (bitte Voraussetzungen beachten). Das Makefile ist allerdings auf mein Entwickler-Zertifikat vorbereitet, man muss es also in der Zeile mit `packagesbuild`austauschen. Die fertigen Disk Images liegen im Ordner `releases`.
+  - `make releasedmg`packt das installierte Plug-in ohne -beta-Zusatz bei der Versionsnummer in einen Installer und diesen in ein Disk Image (bitte Voraussetzungen beachten). Das Makefile ist allerdings auf mein Entwickler-Zertifikat vorbereitet. Das muss man in der Zeile mit `packagesbuild`austauschen.
+  - `make notarize`schickt das zum aktuellen Datum passende Disk Image aus `releases`zur Notarisierung an Apple. Auch hier muss das Makefile bearbeiten und seinen Entwickler-Account bei `xcrun altool`hinter `--username`angeben. Das Password holt sich das Makefile aus dem Schlüsselbundeintrag `AC_PASSWORD`.
+  - `make nhistory`zeigt den Notarisierungsstatus an. Besser, man wartet auf die Bestätigungs-Mail von Apple. 
+  - `make nstaple`wendet bei erfolgreicher Notarisierung das Ticket auf das Disk Image an, womit es dann korrekt notarisiert und bereit für die Veröffentlichung ist.
+
 ### Lizenzen
 
 - Die Wortliste von BeoLingus unterliegt der [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
