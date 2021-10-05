@@ -83,7 +83,7 @@ StopWordsEN_2 = "he/she|he/she/it|i/he/she/it|i/he/she|i|he|she|it|they|we|his|h
 Flags = {'de': u'🇩🇪', 'en': u'🇬🇧'}
 
 print("Lexikon-Plug-in (%s) auf Basis von Beolingus.de" % dictFull)
-print("CreateXML v2.0.2 von Wolfgang Reszel, 2021-08-26")
+print("CreateXML v2.0.3 von Wolfgang Reszel, 2021-10-05")
 print()
 morphology = {}
 for file in ["morphology-cache.txt", "../Morphologie_Deutsch/morphology-cache.txt"]:
