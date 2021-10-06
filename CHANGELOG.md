@@ -2,6 +2,12 @@
 
 Sorry, there’s no english changelog.
 
+## v2021.10.06
+
+### Geändert (Changed)
+
+- Das Installationsprogramm setzt nun die Standard-Einstellungen, sofern entsprechende Einträge in der Preferences-Datei fehlen. Damit wird verhindert, dass das Plug-in keine Inhalte zeigt ([siehe FAQ](https://tekl.de/lexikon-faq/lexikon-plug-zeigt-keine-inhalte)) falls die zuvor installierte Version weniger Einstellmöglichkeiten bot.
+
 ## v2021.09.29
 
 ### Fehler behoben (Fixed)
