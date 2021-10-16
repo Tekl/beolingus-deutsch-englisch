@@ -1473,13 +1473,6 @@
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
 			</dict>
-			<key>CERTIFICATE</key>
-			<dict>
-				<key>NAME</key>
-				<string>Developer ID Installer: Wolfgang Reszel (3D3Y3WDMYF)</string>
-				<key>PATH</key>
-				<string>/Users/Wolfgang/Library/Keychains/login.keychain</string>
-			</dict>
 			<key>EXCLUDED_FILES</key>
 			<array>
 				<dict>
@@ -1649,7 +1642,7 @@
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>BeoLingus Deutsch-Englisch Installation</string>
+			<string>BeoLingus Deutsch-Englisch Temp</string>
 			<key>PAYLOAD_ONLY</key>
 			<false/>
 			<key>TREAT_MISSING_PRESENTATION_DOCUMENTS_AS_WARNING</key>
