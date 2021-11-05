@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
 # DIESES SCRIPT BITTE NICHT MANUELL AUSFÜHREN
@@ -100,7 +100,7 @@ bundleVersion = datetime.datetime.today().strftime("%Y.%m.%d") + versionSuffx
 # bundleVersion = "2007.10.10"
 
 urllib.urlcleanup()
-download = urllib.urlretrieve("https://ftp.tu-chemnitz.de/pub/Local/urz/ding/" + dict + "-devel/" + dict + ".txt.gz", "de-en.txt.gz", progress)
+download = urllib.urlretrieve("http://ftp.tu-chemnitz.de/pub/Local/urz/ding/" + dict + "-devel/" + dict + ".txt.gz", "de-en.txt.gz", progress)
 if string.find(str(download[1]), "Error") > 0:
     print("\nHerunterladen fehlgeschlagen, bitte später noch mal versuchen\n")
     print(download[1])
