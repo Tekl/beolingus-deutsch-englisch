@@ -5,3 +5,4 @@ objects
 .nova
 .mypy_cache
 testing.nosync
+DefaultStyle.css
