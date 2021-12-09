@@ -1,6 +1,6 @@
 ###########################
 # Makefile
-# for BeoLingus Deutsch-Englisch v2021.11.05
+# for BeoLingus Deutsch-Englisch v2021.12.09
 # by Wolfgang Reszel
 # https://github.com/Tekl/beolingus-deutsch-englisch
 ###########################
