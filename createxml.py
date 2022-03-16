@@ -1,10 +1,10 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # DIESES SCRIPT BITTE NICHT MANUELL AUSFÜHREN
 # ES WIRD PER "MAKE" AUFGERUFEN
 
-import os, sys, time, re, codecs, datetime, urllib, string, pickle, email  # , subprocess, time
+import os, sys, time, re, codecs, datetime, urllib.request, urllib.parse, string, pickle, email.utils  # , subprocess, time
 
 
 def progress(a, b, c):
@@ -83,13 +83,13 @@ StopWordsEN_2 = "he/she|he/she/it|i/he/she/it|i/he/she|i|he|she|it|they|we|his|h
 Flags = {'de': u'🇩🇪', 'en': u'🇬🇧'}
 
 print("Lexikon-Plug-in (%s) auf Basis von Beolingus.de" % dictFull)
-print("CreateXML v2.0.3 von Wolfgang Reszel, 2021-10-05")
+print("CreateXML v2.0.4 von Wolfgang Reszel, 2022-03-16")
 print()
 morphology = {}
 for file in ["morphology-cache.txt", "../Morphologie_Deutsch/morphology-cache.txt"]:
     if os.path.isfile(file):
         print("Morpholgie-Cache-Datei gefunden und geladen.\n")
-        morphcache = open(file, 'r')
+        morphcache = open(file, 'rb')
         morphology = pickle.load(morphcache)
         morphcache.close()
         break
@@ -99,16 +99,16 @@ print("Aktuelle Wortliste wird heruntergeladen ...")
 bundleVersion = datetime.datetime.today().strftime("%Y.%m.%d") + versionSuffx
 # bundleVersion = "2007.10.10"
 
-urllib.urlcleanup()
-download = urllib.urlretrieve("http://ftp.tu-chemnitz.de/pub/Local/urz/ding/" + dict + "-devel/" + dict + ".txt.gz", "de-en.txt.gz", progress)
-if string.find(str(download[1]), "Error") > 0:
+urllib.request.urlcleanup()
+download = urllib.request.urlretrieve("http://ftp.tu-chemnitz.de/pub/Local/urz/ding/" + dict + "-devel/" + dict + ".txt.gz", "de-en.txt.gz", progress)
+if str(download[1]).find("Error") > -1:
     print("\nHerunterladen fehlgeschlagen, bitte später noch mal versuchen\n")
     print(download[1])
     exit()
 
 timestamp = re.sub("(?s)^.*Last-Modified: ([^\n]+)\n.*$", "\\1", str(download[1]))
-downloadfiledate = datetime.datetime.fromtimestamp(time.mktime(email.Utils.parsedate(timestamp))).strftime("%d.%m.%Y")
-downloadfileyear = datetime.datetime.fromtimestamp(time.mktime(email.Utils.parsedate(timestamp))).strftime("%Y")
+downloadfiledate = datetime.datetime.fromtimestamp(time.mktime(email.utils.parsedate(timestamp))).strftime("%d.%m.%Y")
+downloadfileyear = datetime.datetime.fromtimestamp(time.mktime(email.utils.parsedate(timestamp))).strftime("%Y")
 
 print("\nHeruntergeladene Datei wird entpackt ...")
 os.system('gzip -d -f ' + dict + '.txt.gz')
@@ -279,12 +279,12 @@ for line in sorted(sourcefile_content):
     line = re.sub(r"(\{[^{};]+) *; ([^{};]+\})", r"\1, \2", line)
     # print(line)
     wordlist = line.split("::")
-    wordlist[0] = re.sub(r'"([^"]+)"', r'„\1“'.decode("utf-8"), wordlist[0])
-    wordlist[1] = re.sub(r'"([^"]+)"', r'“\1”'.decode("utf-8"), wordlist[1])
-    wordlist[0] = re.sub(r'\'([^\']+)\'', r'‚\1‘'.decode("utf-8"), wordlist[0])
-    wordlist[1] = re.sub(r'\'([^\']+)\'', r'‘\1’'.decode("utf-8"), wordlist[1])
-    wordlist[0] = re.sub(r'\'', r'’'.decode("utf-8"), wordlist[0])
-    wordlist[1] = re.sub(r'\'', r'’'.decode("utf-8"), wordlist[1])
+    wordlist[0] = re.sub(r'"([^"]+)"', r'„\1“', wordlist[0])
+    wordlist[1] = re.sub(r'"([^"]+)"', r'“\1”', wordlist[1])
+    wordlist[0] = re.sub(r'\'([^\']+)\'', r'‚\1‘', wordlist[0])
+    wordlist[1] = re.sub(r'\'([^\']+)\'', r'‘\1’', wordlist[1])
+    wordlist[0] = re.sub(r'\'', r'’', wordlist[0])
+    wordlist[1] = re.sub(r'\'', r'’', wordlist[1])
 
     for lng in range(2):
         if lng == 0:
@@ -447,7 +447,7 @@ for line in sorted(sourcefile_content):
                     if dvalue != dvalue2:
                         if '<d:index d:value="' + normalize(dvalue2.lower()) + '"' not in normalize(dvalues[id].lower()):
                             dvalues[id] = dvalues[id] + '\n<d:index d:value="' + dvalue2 + '" d:title="' + dvalue2 + u' → ' + dvalue + '"/>'
-                    linkwords[id] = urllib.quote_plus(re.sub(r'\([^)]+\)|{[^}]+}|\[[^\]]+\]| /([^/]+)/|<[^<>]+>', "", element).strip().encode("utf-8"))
+                    linkwords[id] = urllib.parse.quote_plus(re.sub(r'\([^)]+\)|{[^}]+}|\[[^\]]+\]| /([^/]+)/|<[^<>]+>', "", element).strip().encode("utf-8"))
                     titles[id] = temp_entities(element)
                     formatted[id] = formattedsource
                     dvalueSplit = dvalue.split()
