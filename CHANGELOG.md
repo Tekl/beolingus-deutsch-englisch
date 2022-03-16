@@ -2,6 +2,13 @@
 
 Sorry, there’s no english changelog.
 
+## v2022.03.16
+
+### Geändert (Changed)
+
+- Datenbestand vom 23.12.2021 mit 848014 Einträgen
+- Code auf Python 3 aktualisiert, weil Python 2 mit macOS 12.3 nicht mehr verfügbar ist. Das ist aber nur relevant, wenn man das Plug-in selbst erzeugen möchte. 
+
 ## v2021.12.09
 
 ### Fehler behoben (Fixed)
