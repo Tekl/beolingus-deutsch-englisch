@@ -1,8 +1,8 @@
 BeoLingus Deutsch-Englisch Lexikon-Plug-in
 ------------------------------------------
 
-_Version: 2021.12.09 - OS X 10.11 bis macOS 12_  
-_Copyright © 2021 Wolfgang Reszel und TU Chemnitz_
+_Version: 2022.03.16 - OS X 10.11 bis macOS 12_  
+_Copyright © 2022 Wolfgang Reszel und TU Chemnitz_
 
 ![Screenshot](images/screenshots/BeoLingus_Screen_1.png)
 
@@ -24,7 +24,7 @@ Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lex
 
 ### Installation
 
-#### Via Installationspaket
+#### Per Installationspaket
 
 1. Laden Sie die aktuelle Version des Plug-ins herunter:  [BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch.dmg)
 2. Öffnen Sie das Disk Image und starten das enthaltene Installations-Programm „BeoLingus Deutsch-Englisch Installation“ per Doppelklick. Folgen Sie den Anweisungen.
@@ -89,4 +89,3 @@ Sie können das Plug-in auch von Hand aus dem Ordner `/Library/Dictionaries` ode
   Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. Detals finden Sie in der GNU General Public License.  
   
   Sie sollten ein Exemplar der [GNU General Public License](LICENSE) zusammen mit diesem Programm erhalten haben. Falls nicht, siehe https://www.gnu.org/licenses/.
-
