@@ -83,7 +83,7 @@ StopWordsEN_2 = "he/she|he/she/it|i/he/she/it|i/he/she|i|he|she|it|they|we|his|h
 Flags = {'de': u'🇩🇪', 'en': u'🇬🇧'}
 
 print("Lexikon-Plug-in (%s) auf Basis von Beolingus.de" % dictFull)
-print("CreateXML v2.0.4 von Wolfgang Reszel, 2022-03-16")
+print("CreateXML v2.0.5 von Wolfgang Kreutz, 2022-07-21")
 print()
 morphology = {}
 for file in ["morphology-cache.txt", "../Morphologie_Deutsch/morphology-cache.txt"]:
@@ -317,7 +317,7 @@ for line in sorted(sourcefile_content):
             # print(translations)
 
             translations = re.sub(r' /([^/;]+)\s*;\s*([^/;]+)/', u' /\\1, \\2/', translations)
-            translations = re.sub(r' /([^/]+)/', u' <span class="s3">= \\1</span>', translations)
+            #translations = re.sub(r' /([^/]+)/', u' <span class="s3">= \\1</span>', translations)
             translations = re.sub(r'(\([^()]+\))', u' <span class="s1">\\1</span>', translations)
             translations = re.sub(r'(\{[^{}]+\})', u' <i class="s2">\\1</i>', translations)
             translations = re.sub(r'(\[[^\[\]]+\])', u' <span class="s2">\\1</span>', translations)
@@ -326,7 +326,9 @@ for line in sorted(sourcefile_content):
             translations = translations.replace(" ; ", "; ").strip()
             translations = translations.replace(" , ", ", ").strip()
             translations = re.sub('> *<', u'> <', translations).strip()
-
+            
+            # print(translations)
+            
             for abbrev in abbreviations:
                 if u' class="s2">' + abbrev + u'</' in translations:
                     translations = translations.replace(u' class="s2">' + abbrev + '</', u' class="s2" title="' + abbreviations[abbrev] + u'">' + abbrev + u'</')
@@ -412,7 +414,7 @@ for line in sorted(sourcefile_content):
                         sourceelement = sourceelement + fachgebiet
 
                 formattedsource = re.sub(r' /([^/;]+)\s*;\s*([^/;]+)/', u' /\\1, \\2/', temp_entities(sourceelement))
-                formattedsource = re.sub(r'\s+/([^/]+)/', u' <span class="s3">= \\1</span>', formattedsource)
+                #formattedsource = re.sub(r'\s+/([^/]+)/', u' <span class="s3">= \\1</span>', formattedsource)
                 formattedsource = re.sub(r'(\([^()]+\))', u' <span class="s1">\\1</span>', formattedsource)
                 formattedsource = re.sub(r'(\[[^\[\]]+\])', u' <span class="s2">\\1</span>', formattedsource)
                 formattedsource = re.sub(r'(\{[^{}]+\})', u' <i class="s2">\\1</i>', formattedsource)
@@ -683,7 +685,7 @@ destfile.write(u"""
     </p>
     <h3>Über BeoLingus Deutsch-Englisch</h3>
     <p>
-        Das Python-Skript zur Umwandlung der BeoLingus-Wortliste in ein Lexikon-Plug-in wurde von Wolfgang Reszel entwickelt. Den Quellcode finden Sie auf <a href="https://github.com/Tekl/beolingus-deutsch-englisch">GitHub</a>.
+        Das Python-Skript zur Umwandlung der BeoLingus-Wortliste in ein Lexikon-Plug-in wurde von Wolfgang Kreutz entwickelt. Den Quellcode finden Sie auf <a href="https://github.com/Tekl/beolingus-deutsch-englisch">GitHub</a>.
     </p>
     <p>
         Die Wortformen-Datei, durch welche auch die Suche nach Wörtern im Plural möglich ist, wurde auf Basis des <a href="http://www.danielnaber.de/morphologie/">Morphologie-Lexikons</a> von Daniel Naber erstellt.
@@ -719,7 +721,7 @@ for filename in rtfFiles:
     if filename == 'Makefile':
         pmdoc = re.sub(r"([_ ])v20\d+.\d+.\d+(-beta)?", "\\1v" + bundleVersion + "", pmdoc)
         pmdoc = re.sub(r"/20\d+.\d+.\d+(-beta)?/", "/" + bundleVersion + "/", pmdoc)
-    pmdoc = re.sub(r"20\d\d Wolfgang Reszel", datetime.datetime.today().strftime("%Y") + " Wolfgang Reszel", pmdoc)
+    pmdoc = re.sub(r"20\d\d Wolfgang Kreutz", datetime.datetime.today().strftime("%Y") + " Wolfgang Kreutz", pmdoc)
     pmdocFile.close()
     if '.rtf' in filename:
         pmdocFile = codecs.open(filename, 'w', 'windows-1252')

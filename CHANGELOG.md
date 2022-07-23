@@ -2,6 +2,11 @@
 
 Sorry, there’s no english changelog.
 
+## v2022.07.22
+
+- Datenbestand vom 22.7.2022 mit 859482 Einträgen.
+- Änderung des Namens im Copyright und im Klappentext (Wolfgang Reszel→Wolfgang Kreutz).
+
 ## v2022.03.16
 
 ### Geändert (Changed)

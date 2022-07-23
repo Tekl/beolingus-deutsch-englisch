@@ -9,11 +9,11 @@
 	<key>CFBundleName</key>
 	<string>BeoLingus Deutsch-Englisch</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2022.03.16</string>
+	<string>2022.07.22</string>
 	<key>CFBundleVersion</key>
-	<string>2022.03.16</string>
+	<string>2022.07.22</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>&lt;p&gt;&lt;b&gt;BeoLingus Deutsch-Englisch&lt;/b&gt; v2022.03.16&lt;/p&gt;&lt;p&gt;Content: © 1995-2022 TU Chemnitz, www.beolingus.de&lt;br/&gt;Plug-in: © 2022 Wolfgang Reszel, www.tekl.de&lt;/p&gt;&lt;p&gt;&lt;a href="https://tekl.de/dictversion.php?version=2022.03.16&amp;ref=prefs&amp;plugin=BeoLingus%20Deutsch-Englisch"&gt;&lt;button&gt;↺ Auf Update prüfen&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;</string>
+	<string>&lt;p&gt;&lt;b&gt;BeoLingus Deutsch-Englisch&lt;/b&gt; v2022.07.22&lt;/p&gt;&lt;p&gt;Content: © 1995-2022 TU Chemnitz, www.beolingus.de&lt;br/&gt;Plug-in: © 2022 Wolfgang Kreutz, www.tekl.de&lt;/p&gt;&lt;p&gt;&lt;a href="https://tekl.de/dictversion.php?version=2022.07.22&amp;ref=prefs&amp;plugin=BeoLingus%20Deutsch-Englisch"&gt;&lt;button&gt;↺ Auf Update prüfen&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;</string>
 	<key>DCSDictionaryDefaultPrefs</key>
 	<dict>
 		<key>Font</key>
@@ -26,7 +26,7 @@
 	<key>DCSDictionaryFrontMatterReferenceID</key>
 	<string>front_back_matter</string>
 	<key>DCSDictionaryManufacturerName</key>
-	<string>Wolfgang Reszel (www.tekl.de)</string>
+	<string>Wolfgang Kreutz (www.tekl.de)</string>
 	<key>DCSDictionaryPrefsHTML</key>
 	<string>Deutsch-Englisch_prefs.html</string>
 	<key>DCSDictionaryUseSystemAppearance</key>
@@ -38,6 +38,6 @@
 	<key>LSHasLocalizedDisplayName</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>© 1995-2022 TU Chemnitz, www.beolingus.de / Wolfgang Reszel, www.tekl.de</string>
+	<string>© 1995-2022 TU Chemnitz, www.beolingus.de / Wolfgang Kreutz, www.tekl.de</string>
 </dict>
 </plist>
