@@ -71,7 +71,8 @@ os.system("clear")
 osVersionMax = "13"
 osVersionMin = "10.11"
 osVersionMinInt = "101100"
-osVersionMinPrefix ="OS X"
+osVersionMinPrefix = "OS X"
+makeFileSuffix = ""
 
 if sys.argv[1] == "beta":
     versionSuffx = "-beta"
@@ -80,6 +81,7 @@ else:
 
 if len(sys.argv) > 2:
     if sys.argv[2] == "legacy":
+        makeFileSuffix = "_Legacy"
         versionSuffx = "-Legacy" + versionSuffx
         osVersionMin = "10.6"
         osVersionMinInt = "100600"
@@ -94,7 +96,7 @@ StopWordsEN_2 = "he/she|he/she/it|i/he/she/it|i/he/she|i|he|she|it|they|we|his|h
 Flags = {'de': u'🇩🇪', 'en': u'🇬🇧'}
 
 print("Lexikon-Plug-in (%s) auf Basis von Beolingus.de" % dictFull)
-print("CreateXML v2.0.7-beo von Wolfgang Kreutz, 2022-08-02")
+print("CreateXML v2.0.8-beo von Wolfgang Kreutz, 2023-12-28")
 print()
 morphology = {}
 for file in ["morphology-cache.txt", "../Morphologie_Deutsch/morphology-cache.txt"]:
@@ -721,7 +723,7 @@ os.system('rm ' + dict + '.txt')
 
 print("\nVersionsnummern werden angepasst ...")
 
-rtfFiles = ['installer/BeoLingus Deutsch-Englisch.pkgproj', 'installer/finishup_de.rtfd/TXT.rtf', 'installer/finishup_en.rtfd/TXT.rtf', 'installer/intro_de.rtfd/TXT.rtf', 'installer/intro_en.rtfd/TXT.rtf', 'LIESMICH.md', 'README.md', 'Makefile']
+rtfFiles = ['installer/BeoLingus Deutsch-Englisch.pkgproj', 'installer/finishup_de.rtfd/TXT.rtf', 'installer/finishup_en.rtfd/TXT.rtf', 'installer/intro_de.rtfd/TXT.rtf', 'installer/intro_en.rtfd/TXT.rtf', 'LIESMICH.md', 'README.md', 'Makefile' + makeFileSuffix]
 for filename in rtfFiles:
     print(filename)
     if '.rtf' in filename:
@@ -733,7 +735,7 @@ for filename in rtfFiles:
     pmdoc = re.sub(r">20\d+.\d+.\d+(-[Ll]egacy)?(-beta)?<", ">" + bundleVersion + "<", pmdoc)
     pmdoc = re.sub(r" 20\d+.\d+.\d+(-[Ll]egacy)?(-beta)?\"", " " + bundleVersion + "\"", pmdoc)
     pmdoc = re.sub(r" v20\d+.\d+.\d+(-[Ll]egacy)?(-beta)?", " v" + bundleVersion, pmdoc)
-    if filename == 'Makefile':
+    if 'Makefile' in filename:
         pmdoc = re.sub(r"([_ ])v20\d+.\d+.\d+(-[Ll]egacy)?(-beta)?", "\\1v" + bundleVersion + "", pmdoc)
         pmdoc = re.sub(r"/20\d+.\d+.\d+(-[Ll]egacy)?(-beta)?/", "/" + bundleVersion + "/", pmdoc)
     pmdoc = re.sub(r"20\d\d Wolfgang Kreutz", datetime.datetime.today().strftime("%Y") + " Wolfgang Kreutz", pmdoc)

@@ -1,6 +1,6 @@
 ###########################
 # Makefile
-# for BeoLingus Deutsch-Englisch v2022.08.02
+# for BeoLingus Deutsch-Englisch v2023.12.28
 # by Wolfgang Kreutz
 # https://github.com/Tekl/beolingus-deutsch-englisch
 ###########################
@@ -64,6 +64,8 @@ all: createxmlbeta build
 
 release: createxml build
 
+releasedist: createxml build releasedmg notarize
+
 createxmlbeta:
 	@echo $(DATE)-beta > VERSION
 	@python3 createxml.py beta
@@ -86,42 +88,33 @@ build:
 	@afplay /System/Library/Sounds/Purr.aiff > /dev/null
 
 dmg:
-	@echo "Creating Beta Installer …"
+	@echo "Creating Beta Installer ..."
 	@mkdir releases/$(VERSION)/ | true
 	@/usr/local/bin/packagesbuild --build-folder "$(shell pwd)/releases" "installer/$(DICT_NAME).pkgproj"
-	@/usr/bin/productsign --sign "Developer ID Installer: Wolfgang Reszel (3D3Y3WDMYF)" "$(shell pwd)/releases/$(DICT_NAME) Temp.pkg" "$(shell pwd)/releases/$(DICT_NAME) Installation.pkg"
+	@/usr/bin/productsign --sign "Developer ID Installer: Wolfgang Kreutz (3D3Y3WDMYF)" "$(shell pwd)/releases/$(DICT_NAME) Temp.pkg" "$(shell pwd)/releases/$(DICT_NAME) Installation.pkg"
 	@rm "$(shell pwd)/releases/$(DICT_NAME) Temp.pkg"
 	@echo "Creating Beta Disk Image …"
 	@/Applications/DMG\ Canvas.app/Contents/Resources/dmgcanvas installer/$(DICT_NAME_NSPC).dmgCanvas releases/$(VERSION)/$(DICT_NAME_NSPC).dmg -setTextString version v$(VERSION)
 	@echo "Beta Installer and Beta Disk Image created."
 	@open releases/$(VERSION)/$(DICT_NAME_NSPC).dmg
-	@echo "- use 'make notarize' to notarize the disk image"
-	@echo "- use 'make nhistory' to check the notarization status"
-	@echo "- use 'make nstaple' to include the notarization ticket into the disk image"
+	@echo "- use 'make notarize' to notarize and staple the disk image"
 	@afplay /System/Library/Sounds/Purr.aiff > /dev/null
 
 releasedmg:
-	@echo "Creating Installer …"
+	@echo "Creating Installer ..."
 	@mkdir releases/$(VERSION)/ | true
 	@/usr/local/bin/packagesbuild --build-folder "$(shell pwd)/releases" "installer/$(DICT_NAME).pkgproj"
-	@/usr/bin/productsign --sign "Developer ID Installer: Wolfgang Reszel (3D3Y3WDMYF)" "$(shell pwd)/releases/$(DICT_NAME) Temp.pkg" "$(shell pwd)/releases/$(DICT_NAME) Installation.pkg"
+	@/usr/bin/productsign --sign "Developer ID Installer: Wolfgang Kreutz (3D3Y3WDMYF)" "$(shell pwd)/releases/$(DICT_NAME) Temp.pkg" "$(shell pwd)/releases/$(DICT_NAME) Installation.pkg"
 	@rm "$(shell pwd)/releases/$(DICT_NAME) Temp.pkg"
 	@echo "Creating Disk Image …"
 	@/Applications/DMG\ Canvas.app/Contents/Resources/dmgcanvas installer/$(DICT_NAME_NSPC).dmgCanvas releases/$(VERSION)/$(DICT_NAME_NSPC).dmg -setTextString version v$(VERSION)
 	@echo "Installer and Disk Image created."
 	@open releases/$(VERSION)/$(DICT_NAME_NSPC).dmg
-	@echo "- use 'make notarize' to notarize the disk image"
-	@echo "- use 'make nhistory' to check the notarization status"
-	@echo "- use 'make nstaple' to include the notarization ticket into the disk image"
+	@echo "- use 'make notarize' to notarize and staple the disk image"
 	@afplay /System/Library/Sounds/Purr.aiff > /dev/null
 
 notarize:
-	xcrun altool --notarize-app --primary-bundle-id "de.tekl.dictionary.beolingusDeutschEnglisch.dmg" --username "tekl@mac.com" --password "@keychain:AC_PASSWORD" --file releases/$(VERSION)/$(DICT_NAME_NSPC).dmg
-
-nhistory:
-	xcrun altool --notarization-history 0 -u "tekl@mac.com" -p "@keychain:AC_PASSWORD"
-
-nstaple:
+	xcrun notarytool submit --keychain-profile 3D3Y3WDMYF --wait releases/$(VERSION)/$(DICT_NAME_NSPC).dmg
 	xcrun stapler staple releases/$(VERSION)/$(DICT_NAME_NSPC).dmg
 
 install:
@@ -131,6 +124,7 @@ install:
 	@rm -rf ~/Library/Caches/com.apple.DictionaryManager
 	@rm -rf ~/Library/Caches/com.apple.Dictionary
 	@rm -rf ~/Library/Caches/com.apple.DictionaryServices
+	@rm -rf $(DESTINATION_FOLDER)/"$(DICT_NAME)".dictionary
 	@defaults write com.apple.Dictionary WebKitDeveloperExtras -bool true
 	@mkdir -p $(DESTINATION_FOLDER)
 	@ditto --noextattr $(DICT_DEV_KIT_OBJ_DIR)/Dictionaries/"$(DICT_NAME)".dictionary $(DESTINATION_FOLDER)/"$(DICT_NAME)".dictionary
@@ -143,5 +137,5 @@ install:
 clean:
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)_leo
-	$(RM) -f "$(DICT_SRC_PATH)""
+	$(RM) -f $(DICT_SRC_PATH)
 	@afplay /System/Library/Sounds/Purr.aiff > /dev/null
