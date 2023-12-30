@@ -32,6 +32,16 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 2. Open the disk image and start the Installer “BeoLingus Deutsch-Englisch Installation”. Follow its instructions.
 3. To install the plugin for the current user and not for all users, click on “Change Install Location …” in the installer and select “Install for me only”.
 
+#### Install with Homebrew
+
+If you use the package manager [Homebrew](https://brew.sh/de), you can start the installation with this terminal command:
+
+`brew install tekl/dictionaries/beolingus-detusch-englisch`.
+
+The plugin will always be installed in `~/Library/Dictionaries`.
+
+The command `brew upgrade` can be used to automatically install updates to the plugin.
+
 #### Manual installation
 
 1. Download the plain dictionary file:  [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
@@ -44,7 +54,13 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 
 ### Uninstalling
 
+To remove the plugin form your system, just launch the installer again and select the option “🚫 Uninstall”.
+
 You can also manually delete the plugin from the folder `/Library/Dictionaries` or `~/Library/Dictionaries` and restart the Dictionary.app.
+
+If you have installed the plugin via Homebrew, you can get rid of it with the following command:
+
+`brew uninstall beolingus-deutsch-englisch`
 
 ### Build the dictionary by yourself using the source code
 

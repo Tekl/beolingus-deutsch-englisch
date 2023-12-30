@@ -30,6 +30,16 @@ Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lex
 2. Öffnen Sie das Disk Image und starten das enthaltene Installations-Programm „BeoLingus Deutsch-Englisch Installation“ per Doppelklick. Folgen Sie den Anweisungen.
 3. Wenn Sie das Plug-in nicht für alle Benutzer, sondern lediglich für den aktuellen Benutzer installieren möchten, klicken Sie im Installer auf „Ort für die Installation ändern …“ und wählen dort „Nur für mich installieren“ aus.
 
+#### Mit Homebrew installieren
+
+Wenn Sie die Paketverwaltung [Homebrew](https://brew.sh/de) nutzen, können Sie die Installation mit diesem Terminal-Befehl anstoßen:
+
+`brew install tekl/dictionaries/beolingus-deutsch-englisch`
+
+Die Installation erfolgt stets in `~/Library/Dictionaries`.
+
+Über `brew upgrade` werden dann auch automatisch Updates des Plug-ins installiert.
+
 #### Manuelle Installation
 
 1. Laden Sie die Wörterbuch-Datei direkt herunter:  [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
@@ -42,7 +52,13 @@ Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lex
 
 ### Deinstallation
 
+Das Plug-in entfernen Sie von Ihrem System, indem Sie das Installationsprogramm erneut ausführen und dort die Option „🚫 Deinstallieren“ ausführen.
+
 Sie können das Plug-in auch von Hand aus dem Ordner `/Library/Dictionaries` oder `~/Library/Dictionaries` löschen und anschließend die Lexikon-Anwendung neu starten.
+
+Falls Sie das Plug-in via Homebrew installiert haben, werden Sie es mit folgendem Befehl wieder los:
+
+`brew uninstall beolingus-deutsch-englisch`
 
 ### Lexikon-Plug-in via Quellcode selbst generieren
 
