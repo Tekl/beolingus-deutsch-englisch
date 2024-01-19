@@ -118,6 +118,9 @@ tell application "System Events"
 	if not (exists property list item "ShowCopyright" of dicPrefs) then
 		make new property list item at end of dicPrefs with properties {kind:string, name:"ShowCopyright", value:"1"}
 	end if
+	if not (exists property list item "ShowFlag" of dicPrefs) then
+		make new property list item at end of dicPrefs with properties {kind:string, name:"ShowFlag", value:"1"}
+	end if
 end tell
 
 -- defaults write is neccessary to update the preferences cache (killall does not work in all cases)
