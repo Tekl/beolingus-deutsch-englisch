@@ -2,6 +2,12 @@
 
 Sorry, there’s no english changelog.
 
+## v2024.01.19
+
+### Fehler behoben (Fixed)
+
+- Bei einigen Anwendern zeigte das Plug-in nur leere Seiten, weil bei der Installation nicht alle Standard-Optionen gesetzt wurden.
+
 ## v2023.12.28
 
 ### Geändert (Changed)
