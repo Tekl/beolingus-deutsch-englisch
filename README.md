@@ -36,7 +36,7 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 
 If you use the package manager [Homebrew](https://brew.sh/de), you can start the installation with this terminal command:
 
-`brew install tekl/dictionaries/beolingus-detusch-englisch`.
+`brew install tekl/dictionaries/beolingus-deutsch-englisch`.
 
 The plugin will always be installed in `~/Library/Dictionaries`.
 
