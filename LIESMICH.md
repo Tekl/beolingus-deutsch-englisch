@@ -1,16 +1,16 @@
-BeoLingus Deutsch-Englisch Lexikon-Plug-in
+Beolingus Deutsch-Englisch Lexikon-Plug-in
 ------------------------------------------
 
-_Version: 2024.05.14 - OS X 10.11 bis macOS 14_  
+_Version: 2024.07.14 - OS X 10.11 bis macOS 15_  
 _Copyright © 2024 Wolfgang Kreutz und TU Chemnitz_
 
-![Screenshot](images/screenshots/BeoLingus_Screen_1.png)
+![Screenshot](images/screenshots/Beolingus_Screen_1.png)
 
 Dieses Plug-in erweitert die Lexikon-App von macOS um ein  Deutsch-Englisch-Wörterbuch.
 
-Der vom Plug-in bereitgestellte Thesaurus basiert auf auf dem Online-Wörterbuch [www.beolingus.de](https://www.beolingus.de) der TU Chemnitz.
+Der vom Plug-in bereitgestellte Thesaurus basiert auf auf dem Online-Wörterbuch [Beolingus](https://dict.zero-g.net) der [TU Chemnitz](https://dict.tu-chemnitz.de).
 
-Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lexikon-Plug-in wurde von Wolfgang Kreutz entwickelt.
+Das Python-Skript zur Umwandlung der Beolingus-Wörterbuchdatei in ein Apple-Lexikon-Plug-in wurde von Wolfgang Kreutz entwickelt.
 
 **Website mit weiterführenden Informationen:** [www.tekl.de](https://tekl.de).  
 **Support und Quellcode:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)  
@@ -19,15 +19,15 @@ Das Python-Skript zur Umwandlung der BeoLingus-Wörterbuchdatei in ein Apple-Lex
 
 ### Download
 
-- [BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch.dmg) (Disk Image mit dem Installationspaket)
-- [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip) (das reine Lexikon-Plug-in als ZIP-Datei zur manuellen Installation)
+- [Beolingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/Beolingus_Deutsch-Englisch.dmg) (Disk Image mit dem Installationspaket)
+- [Beolingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/Beolingus_Deutsch-Englisch_dictionaryfile.zip) (das reine Lexikon-Plug-in als ZIP-Datei zur manuellen Installation)
 
 ### Installation
 
 #### Per Installationspaket
 
-1. Laden Sie die aktuelle Version des Plug-ins herunter:  [BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch.dmg)
-2. Öffnen Sie das Disk Image und starten das enthaltene Installations-Programm „BeoLingus Deutsch-Englisch Installation“ per Doppelklick. Folgen Sie den Anweisungen.
+1. Laden Sie die aktuelle Version des Plug-ins herunter:  [Beolingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/Beolingus_Deutsch-Englisch.dmg)
+2. Öffnen Sie das Disk Image und starten das enthaltene Installations-Programm „Beolingus Deutsch-Englisch Installation“ per Doppelklick. Folgen Sie den Anweisungen.
 3. Wenn Sie das Plug-in nicht für alle Benutzer, sondern lediglich für den aktuellen Benutzer installieren möchten, klicken Sie im Installer auf „Ort für die Installation ändern …“ und wählen dort „Nur für mich installieren“ aus.
 
 #### Mit Homebrew installieren
@@ -42,7 +42,7 @@ Die Installation erfolgt stets in `~/Library/Dictionaries`.
 
 #### Manuelle Installation
 
-1. Laden Sie die Wörterbuch-Datei direkt herunter:  [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
+1. Laden Sie die Wörterbuch-Datei direkt herunter:  [Beolingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/Beolingus_Deutsch-Englisch_dictionaryfile.zip)
 2. Starten Sie das Programm „Lexikon.app“ und führen Sie den Befehl „Lexika-Ordner öffnen“ oder „Ordner Dictionaries öffnen“ im Menü „Ablage“ aus.  
 ![Schritt 1](images/manual%20installation/dict-inst-1cursor.png)
 3. Es öffnet sich nun ein Finder-Fenster, das den Ordner „Dictionaries“ zeigt. Ziehen Sie das heruntergeladene Plug-in in dieses Finder-Fenster.  
@@ -96,7 +96,7 @@ Falls Sie das Plug-in via Homebrew installiert haben, werden Sie es mit folgende
 
 ### Lizenzen
 
-- Die Wortliste von BeoLingus unterliegt der [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
+- Die Wortliste von Beolingus unterliegt der [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
 
 - Das Lexikon-Plug-in und die zur Erstellung verwendeten Skripte unterliegen der [GPLv3](https://www.gnu.org/licenses/gpl.html)  
   

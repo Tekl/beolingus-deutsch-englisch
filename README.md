@@ -1,18 +1,18 @@
 🇩🇪 [Deutsche Liesmich-Datei](LIESMICH.md)
 
-BeoLingus German-English Dictionary Plugin
+Beolingus German-English Dictionary Plugin
 ------------------------------------------
 
-_Version: 2024.05.14 - OS X 10.11 to macOS 14_  
+_Version: 2024.07.14 - OS X 10.11 to macOS 15_  
 _Copyright © 2024 Wolfgang Kreutz and TU Chemnitz_
 
-![Screenshot](images/screenshots/BeoLingus_Screen_1.png)
+![Screenshot](images/screenshots/Beolingus_Screen_1.png)
 
 This plugin extends Apple's Dictionary Application with a German-English dictionary.
 
-The content of this plugin is based on the online dictionary [www.beolingus.de](https://www.beolingus.de) by TU Chemnitz.
+The content of this plugin is based on the online dictionary [Beolingus](https://dict.zero-g.net) by [TU Chemnitz](https://dict.tu-chemnitz.de).
 
-The Python script to convert the BeoLingus dictionary into a dictionary plugin was developed by Wolfgang Kreutz.
+The Python script to convert the Beolingus dictionary into a dictionary plugin was developed by Wolfgang Kreutz.
 
 **Website with further information:** [www.tekl.de](https://tekl.de).  
 **Support and source code:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)  
@@ -21,15 +21,15 @@ The Python script to convert the BeoLingus dictionary into a dictionary plugin w
 
 ### Download
 
-- [BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch.dmg) (disk image containing an installer package)
-- [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip) (the plain Dictionary plugin bundle in a ZIP file for manual installation)
+- [Beolingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/Beolingus_Deutsch-Englisch.dmg) (disk image containing an installer package)
+- [Beolingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/Beolingus_Deutsch-Englisch_dictionaryfile.zip) (the plain Dictionary plugin bundle in a ZIP file for manual installation)
 
 ### Installation
 
 #### Using the installer
 
-1. Download the current Version of the dictionary plugin:  [BeoLingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch.dmg)
-2. Open the disk image and start the Installer “BeoLingus Deutsch-Englisch Installation”. Follow its instructions.
+1. Download the current Version of the dictionary plugin:  [Beolingus_Deutsch-Englisch.dmg](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/Beolingus_Deutsch-Englisch.dmg)
+2. Open the disk image and start the Installer “Beolingus Deutsch-Englisch Installation”. Follow its instructions.
 3. To install the plugin for the current user and not for all users, click on “Change Install Location …” in the installer and select “Install for me only”.
 
 #### Install with Homebrew
@@ -44,7 +44,7 @@ The command `brew upgrade` can be used to automatically install updates to the p
 
 #### Manual installation
 
-1. Download the plain dictionary file:  [BeoLingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/BeoLingus_Deutsch-Englisch_dictionaryfile.zip)
+1. Download the plain dictionary file:  [Beolingus Deutsch-Englisch.dictionary](https://github.com/Tekl/beolingus-deutsch-englisch/releases/latest/download/Beolingus_Deutsch-Englisch_dictionaryfile.zip)
 2. Launch the program “Dictionary.app” und execute the command “Open dictionary folder” from the File menu.  
 ![Schritt 1](images/manual%20installation/dict-inst-1cursor.png)
 1. The Finder will open a window with the folder “Dictionaries”. Drag and drop the downloaded plugin into this Finder window.  
@@ -98,7 +98,7 @@ If you have installed the plugin via Homebrew, you can get rid of it with the fo
 
 ### Licenses
 
-- The word list from BeoLingus is licensed under [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
+- The word list from Beolingus is licensed under [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
 
 - This plugin and the build scripts are licenssed under [GPLv3](https://www.gnu.org/licenses/gpl.html)  
 

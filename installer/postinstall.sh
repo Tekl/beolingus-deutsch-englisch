@@ -3,7 +3,7 @@ osascript <<EOF
 set installDir to "${2}"
 set homeDir to "${HOME}"
 set bundleID to "de.tekl.dictionary.beoLingusDeutschEnglisch"
-set BundlePath to installDir & "/Library/Dictionaries/BeoLingus Deutsch-Englisch.dictionary"
+set BundlePath to installDir & "/Library/Dictionaries/Beolingus Deutsch-Englisch.dictionary"
 if BundlePath begins with "//" then set BundlePath to characters 2 thru -1 of BundlePath as string
 
 try

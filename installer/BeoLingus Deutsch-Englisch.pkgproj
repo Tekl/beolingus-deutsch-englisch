@@ -96,7 +96,7 @@
 											<key>GID</key>
 											<integer>20</integer>
 											<key>PATH</key>
-											<string>../objects/Dictionaries/BeoLingus Deutsch-Englisch.dictionary</string>
+											<string>../objects/Dictionaries/Beolingus Deutsch-Englisch.dictionary</string>
 											<key>PATH_TYPE</key>
 											<integer>1</integer>
 											<key>PERMISSIONS</key>
@@ -514,7 +514,7 @@
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>BeoLingus De-En</string>
+				<string>Beolingus De-En</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<false/>
 				<key>PAYLOAD_SIZE</key>
@@ -526,7 +526,7 @@
 				<key>USE_HFS+_COMPRESSION</key>
 				<true/>
 				<key>VERSION</key>
-				<string>2024.05.14</string>
+				<string>2024.07.14</string>
 			</dict>
 			<key>TYPE</key>
 			<integer>0</integer>
@@ -1092,13 +1092,13 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Installs v2024.05.14 of the Dictionary Plugin on you Mac.</string>
+										<string>Installs v2024.07.14 of the Dictionary Plugin on you Mac.</string>
 									</dict>
 									<dict>
 										<key>LANGUAGE</key>
 										<string>German</string>
 										<key>VALUE</key>
-										<string>Installiert v2024.05.14 des Lexikon-Plug-ins auf Ihren Mac.</string>
+										<string>Installiert v2024.07.14 des Lexikon-Plug-ins auf Ihren Mac.</string>
 									</dict>
 								</array>
 								<key>OPTIONS</key>
@@ -1139,13 +1139,13 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>✅ BeoLingus German-English</string>
+										<string>✅ Beolingus German-English</string>
 									</dict>
 									<dict>
 										<key>LANGUAGE</key>
 										<string>German</string>
 										<key>VALUE</key>
-										<string>✅ BeoLingus Deutsch-Englisch</string>
+										<string>✅ Beolingus Deutsch-Englisch</string>
 									</dict>
 								</array>
 								<key>TYPE</key>
@@ -1197,7 +1197,7 @@
 											<integer>0</integer>
 											<key>IC_REQUIREMENT_FILES_LIST</key>
 											<array>
-												<string>/Library/Dictionaries/BeoLingus Deutsch-Englisch.dictionary/Contents/Info.plist</string>
+												<string>/Library/Dictionaries/Beolingus Deutsch-Englisch.dictionary/Contents/Info.plist</string>
 											</array>
 											<key>IC_REQUIREMENT_FILES_SELECTOR</key>
 											<integer>0</integer>
@@ -1390,13 +1390,13 @@
 						<key>LANGUAGE</key>
 						<string>English</string>
 						<key>VALUE</key>
-						<string>BeoLingus German-English Dictionary Plugin</string>
+						<string>Beolingus German-English Dictionary Plugin</string>
 					</dict>
 					<dict>
 						<key>LANGUAGE</key>
 						<string>German</string>
 						<key>VALUE</key>
-						<string>BeoLingus Deutsch-Englisch Lexikon-Plug-in</string>
+						<string>Beolingus Deutsch-Englisch Lexikon-Plug-in</string>
 					</dict>
 				</array>
 			</dict>
@@ -1636,7 +1636,7 @@
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>BeoLingus Deutsch-Englisch Temp</string>
+			<string>Beolingus Deutsch-Englisch Temp</string>
 			<key>PAYLOAD_ONLY</key>
 			<false/>
 			<key>TREAT_MISSING_PRESENTATION_DOCUMENTS_AS_WARNING</key>

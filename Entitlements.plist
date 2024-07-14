@@ -7,6 +7,6 @@
 	<key>com.apple.security.cs.disable-library-validation</key>
 	<true/>
 	<key>com.apple.security.temporary-exception.files.absolute-path.read-only</key>
-	<string>/Volumes/BeoLingus Deutsch-Englisch</string>
+	<string>/Volumes/Beolingus Deutsch-Englisch</string>
 </dict>
 </plist>

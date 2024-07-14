@@ -2,7 +2,7 @@
 osascript <<EOF
 set installDir to "${2}"
 set homeDir to "${HOME}"
-set pluginName to "BeoLingus Deutsch-Englisch.dictionary"
+set pluginName to "Beolingus Deutsch-Englisch.dictionary"
 
 try
 	do shell script "pkill DictionaryPanel"

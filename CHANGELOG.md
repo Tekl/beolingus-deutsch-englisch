@@ -1,6 +1,12 @@
-# Changelog für BeoLingus Deutsch-Englisch
+# Changelog für Beolingus Deutsch-Englisch
 
 Sorry, there’s no english changelog.
+
+## v2024.07.14
+
+- Schreibweise von BeoLingus auf Beolingus korrigiert.
+- Links in der Fußzeilen von Einträgen zeigen nun zur Online-Suche auf [dict.zero-g.net](https://dict.zero-g.net), da die Suche auf beolingus.de [abgeschaltet](https://tekl.de/news/beolingus-website-wird-ende-juni-2024-eingestellt) wurde.
+- Datenbestand vom 11.7.2024 mit 899477 Einträgen.
 
 ## v2024.05.14
 

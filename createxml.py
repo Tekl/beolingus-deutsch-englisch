@@ -6,10 +6,8 @@
 
 import os, sys, time, re, codecs, datetime, urllib.request, urllib.parse, string, pickle, email.utils  # , subprocess, time
 
-
 def progress(a, b, c):
     sys.stdout.write(".")
-
 
 def sort_by_value(d):
     """ Returns the keys of dictionary d sorted by their values """
@@ -17,7 +15,6 @@ def sort_by_value(d):
     backitems = [[v[1], v[0]] for v in items]
     backitems.sort()
     return [backitems[i][1] for i in range(0, len(backitems))]
-
 
 def normalize(s):
     s = s.replace(u"ä", "a")
@@ -28,7 +25,6 @@ def normalize(s):
     s = s.replace(u"Ö", "O")
     return s
 
-
 def temp_entities(s):
     s = s.replace(u"&", "!!!-#amp#-!!!")
     s = s.replace(u"\"", "!!!-#quot#-!!!")
@@ -36,12 +32,10 @@ def temp_entities(s):
     s = s.replace(u">", "!!!-#gt#-!!!")
     return s
 
-
 def real_entities(s):
     s = s.replace("!!!-#", "&")
     s = s.replace("#-!!!", ";")
     return s
-
 
 def entities(s):
     s = s.replace(u"&", "&amp;")
@@ -50,11 +44,9 @@ def entities(s):
     s = s.replace(u">", "&gt;")
     return s
 
-
 def strip_tags(value):
     r = re.compile(r'<[^>]*?>')
     return r.sub('', value).replace(u" ", " ").strip()
-
 
 def generate_id(element):
     id = re.sub(u'(?u)[\"<>,«»„“”‚‘’]', '', element.lower())
@@ -68,7 +60,7 @@ def generate_id(element):
 
 os.system("clear")
 
-osVersionMax = "13"
+osVersionMax = "15"
 osVersionMin = "10.11"
 osVersionMinInt = "101100"
 osVersionMinPrefix = "OS X"
@@ -88,15 +80,15 @@ if len(sys.argv) > 2:
         osVersionMinPrefix = "Mac OS X"
 
 dict = "de-en"
-dictFull = "BeoLingus De-En"
+dictFull = "Beolingus De-En"
 StopWordsDE_1 = "der|die|das|in|im|ein|wo|an|am|hat|hatte"
 StopWordsDE_2 = "er/sie|er/sie/es|ich/er/sie/es|ich/er/sie|ich|er|sie|es|wir|werden|ihm|ihr|wird|wurde|ist/war|hat/hatte|ist|war|sich|jdn./etw.|etw.|jmd.|jdn."
 StopWordsEN_1 = "to|in|into|the|a|an|on|has|had"
 StopWordsEN_2 = "he/she|he/she/it|i/he/she/it|i/he/she|i|he|she|it|they|we|his|her|him|itself|herself|himself|would|will|has/had|is/was|was|is|of|sb./sth.|sth.|sbd.|sb."
 Flags = {'de': u'🇩🇪', 'en': u'🇬🇧'}
 
-print("Lexikon-Plug-in (%s) auf Basis von Beolingus.de" % dictFull)
-print("CreateXML v2.0.8-beo von Wolfgang Kreutz, 2023-12-28")
+print("Lexikon-Plug-in (%s) auf Basis von Beolingus" % dictFull)
+print("CreateXML v2.0.9-beo von Wolfgang Kreutz, 2024-07-14")
 print()
 morphology = {}
 for file in ["morphology-cache.txt", "../Morphologie_Deutsch/morphology-cache.txt"]:
@@ -628,10 +620,9 @@ for id in sorted(lengths):
             for addalso in addalsos:
                 if addalso not in seealsos[newid]:
                     seealsos[newid] = seealsos[newid] + ', ' + addalso
-            # titles[newid] = titles[newid] + titles[id]
+
             formattedNEWID = re.sub('^.*(<b>.+?</b>).*$', '\\1', formatted[newid])
             formattedID = re.sub('^.*(<b>.+?</b>).*$', '\\1', formatted[id])
-            linkwords[newid] = linkwords[newid] + linkwords[id]
             if len(formattedID) < len(formattedNEWID):
                 formattedTMP = formatted[newid]
                 formatted[newid] = formatted[id]
@@ -676,20 +667,20 @@ for id in sort_by_value(lengths):
 %s
 %s
 %s
-<div class="c" d:priority="2"><span><a href="https://www.beolingus.de/dings.cgi?query=%s">Aus BeoLingus.de</a> · © %s TU Chemnitz</span></div>
+<div class="c" d:priority="2"><span><a href="https://dict.zero-g.net/?q=%s">Aus Beolingus</a> · © %s TU Chemnitz</span></div>
 </d:entry>""" % (entities(id), real_entities(titles[id]), parentals[id], real_entities(dvalues[id]), real_entities(formatted[id]), real_entities(result[id]), real_entities(seealsos[id]), real_entities(linkwords[id]), downloadfileyear)))
 
 destfile.write(u"""
 <d:entry id="front_back_matter" d:title="Vorderer/hinterer Teil">
-    <h1><b>BeoLingus Deutsch-Englisch</b></h1>
+    <h1><b>Beolingus Deutsch-Englisch</b></h1>
     <div><small><b>Version: %s</b></small></div>
     <p>
         <img src="Images/beolingus.png" align="right" style="padding-left:10px" alt=""/>
         Dieses Wörterbuch basiert auf dem Online-Wörterbuch:<br/>
-        <a href="https://www.beolingus.de">www.beolingus.de</a> der TU Chemnitz. (Stand: %s, %s Einträge)
+        <a href="https://dict.zero-g.net">Beolingus</a> der <a href="https://dict.tu-chemnitz.de" target="_blank">TU Chemnitz</a>. (Stand: %s, %s Einträge)
     </p>
     <p>
-        <a href="https://tekl.de/dictversion.php?version=%s&amp;plugin=BeoLingus%%20Deutsch-Englisch"><button>↺ Nach Update suchen</button></a>
+        <a href="https://tekl.de/dictversion.php?version=%s&amp;plugin=Beolingus%%20Deutsch-Englisch"><button>↺ Nach Update suchen</button></a>
     </p>
     <h3>Informationen und Hilfe</h3>
     <p>
@@ -700,9 +691,9 @@ destfile.write(u"""
             <li>Support erhalten Sie auf <a href="https://github.com/Tekl/beolingus-deutsch-englisch/issues">GitHub</a> (Issues) oder via <a href="mailto:support@tekl.de">support@tekl.de</a></li>
         </ul>
     </p>
-    <h3>Über BeoLingus Deutsch-Englisch</h3>
+    <h3>Über Beolingus Deutsch-Englisch</h3>
     <p>
-        Das Python-Skript zur Umwandlung der BeoLingus-Wortliste in ein Lexikon-Plug-in wurde von Wolfgang Kreutz entwickelt. Den Quellcode finden Sie auf <a href="https://github.com/Tekl/beolingus-deutsch-englisch">GitHub</a>.
+        Das Python-Skript zur Umwandlung der Beolingus-Wortliste in ein Lexikon-Plug-in wurde von Wolfgang Kreutz entwickelt. Den Quellcode finden Sie auf <a href="https://github.com/Tekl/beolingus-deutsch-englisch">GitHub</a>.
     </p>
     <p>
         Die Wortformen-Datei, durch welche auch die Suche nach Wörtern im Plural möglich ist, wurde auf Basis des <a href="https://www.danielnaber.de/morphologie/">Morphologie-Lexikons</a> von Daniel Naber erstellt.
@@ -711,7 +702,7 @@ destfile.write(u"""
         <img src="Images/gplv3-88x31.png" align="left" style="padding-right:10px" alt=""/>
         <b>Lizenz:</b>
         Dieses Lexikon-Plug-in unterliegt der <a href="https://www.gnu.org/licenses/gpl.html">GPLv3</a><br/>
-        Die Wortliste von BeoLingus unterliegt der
+        Die Wortliste von Beolingus unterliegt der
         <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt">GPLv2</a><br/>
     </p>
 </d:entry>
@@ -723,7 +714,7 @@ os.system('rm ' + dict + '.txt')
 
 print("\nVersionsnummern werden angepasst ...")
 
-rtfFiles = ['installer/BeoLingus Deutsch-Englisch.pkgproj', 'installer/finishup_de.rtfd/TXT.rtf', 'installer/finishup_en.rtfd/TXT.rtf', 'installer/intro_de.rtfd/TXT.rtf', 'installer/intro_en.rtfd/TXT.rtf', 'LIESMICH.md', 'README.md', 'Makefile' + makeFileSuffix]
+rtfFiles = ['installer/Beolingus Deutsch-Englisch.pkgproj', 'installer/finishup_de.rtfd/TXT.rtf', 'installer/finishup_en.rtfd/TXT.rtf', 'installer/intro_de.rtfd/TXT.rtf', 'installer/intro_en.rtfd/TXT.rtf', 'LIESMICH.md', 'README.md', 'Makefile' + makeFileSuffix]
 for filename in rtfFiles:
     print(filename)
     if '.rtf' in filename:
