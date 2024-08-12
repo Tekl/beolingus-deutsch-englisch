@@ -88,7 +88,7 @@ StopWordsEN_2 = "he/she|he/she/it|i/he/she/it|i/he/she|i|he|she|it|they|we|his|h
 Flags = {'de': u'🇩🇪', 'en': u'🇬🇧'}
 
 print("Lexikon-Plug-in (%s) auf Basis von Beolingus" % dictFull)
-print("CreateXML v2.0.9-beo von Wolfgang Kreutz, 2024-07-14")
+print("CreateXML v2.1.0-beo von Wolfgang Kreutz, 2024-08-12")
 print()
 morphology = {}
 for file in ["morphology-cache.txt", "../Morphologie_Deutsch/morphology-cache.txt"]:
@@ -145,7 +145,7 @@ speedvar1 = u""
 speedvar2 = u""
 
 with open('abbreviations.json', 'rb') as fh:
-    abbreviations = { k: f"🇩🇪 {v['de']} &#x2028;🇬🇧 {v['en']}" for k,v in json.load(fh).items() }
+    abbreviations = { k: f"{Flags['de']} {v['de']} &#x2028;{Flags['en']} {v['en']}" for k,v in json.load(fh).items() }
 
 for line in sorted(sourcefile_content):
     if line[0] == "#" or line.strip() == "":
