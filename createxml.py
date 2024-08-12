@@ -677,7 +677,7 @@ destfile.write(u"""
     <p>
         <img src="Images/beolingus.png" align="right" style="padding-left:10px" alt=""/>
         Dieses Wörterbuch basiert auf dem Online-Wörterbuch:<br/>
-        <a href="https://dict.zero-g.net">Beolingus</a> der <a href="https://dict.tu-chemnitz.de" target="_blank">TU Chemnitz</a>. (Stand: %s, %s Einträge)
+        <a href="https://dict.zero-g.net">Beolingus</a> der <a href="https://dict.tu-chemnitz.de">TU Chemnitz</a>. (Stand: %s, %s Einträge)
     </p>
     <p>
         <a href="https://tekl.de/dictversion.php?version=%s&amp;plugin=Beolingus%%20Deutsch-Englisch"><button>↺ Nach Update suchen</button></a>
