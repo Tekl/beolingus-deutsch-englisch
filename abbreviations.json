@@ -1,0 +1,470 @@
+{
+  "[Am.]": {
+    "de": "Amerikanisches Englisch",
+    "en": "American English"
+  },
+  "[Austr.]": {
+    "de": "Australisches Englisch",
+    "en": "Australian English"
+  },
+  "[Br.]": {
+    "de": "Britisches Englisch",
+    "en": "British English"
+  },
+  "[Can.]": {
+    "de": "kanadisches Englisch",
+    "en": "Canadian English"
+  },
+  "[Dt.]": {
+    "de": "auf Deutschland beschr\u00e4nkter Sprachgebrauch",
+    "en": "usage limited to Germany"
+  },
+  "[Ir.]": {
+    "de": "Irisches Englisch",
+    "en": "Irish English"
+  },
+  "[Jugendsprache]": {
+    "de": "Sprachgebrauch unter Jugendlichen",
+    "en": "usage when teenagers speak to each other"
+  },
+  "[J\u00e4gersprache]": {
+    "de": "Fachjargon der J\u00e4ger",
+    "en": "jargon used by hunters"
+  },
+  "[Kindersprache]": {
+    "de": "Sprachgebrauch bei Gespr\u00e4chen mit oder unter Kindern",
+    "en": "usage when speaking to children or when children speak among themselves"
+  },
+  "[Lie.]": {
+    "de": "Sprachgebrauch in Liechtenstein",
+    "en": "Liechtenstein usage; Liechtenstein idiom"
+  },
+  "[NZ]": {
+    "de": "neuseel\u00e4ndisches Englisch",
+    "en": "New Zealand English"
+  },
+  "[Sc.]": {
+    "de": "Schottisches Englisch",
+    "en": "Scottish English"
+  },
+  "[Schw.]": {
+    "de": "Sprachgebrauch in der Schweiz; Helvetismus",
+    "en": "Swiss usage; Swiss idiom"
+  },
+  "[Sprw.]": {
+    "de": "Sprichwort",
+    "en": "proverb"
+  },
+  "[S\u00fcdtirol]": {
+    "de": "Sprachgebrauch in S\u00fcdtirol",
+    "en": "South Tyrol usage; South Tyrol idiom"
+  },
+  "[adm.]": {
+    "de": "Amtssprache; Verwaltung",
+    "en": "official language; administration"
+  },
+  "[agr.]": {
+    "de": "Landwirtschaft; Forstwirtschaft; Gartenbau",
+    "en": "agriculture; forestry; gardening"
+  },
+  "[alt]": {
+    "de": "alte deutsche Rechtschreibung",
+    "en": "old German spelling"
+  },
+  "[altert\u00fcmlich]": {
+    "de": "altert\u00fcmlich",
+    "en": "archaic"
+  },
+  "[anat.]": {
+    "de": "Anatomie",
+    "en": "anatomy"
+  },
+  "[arch.]": {
+    "de": "Architektur",
+    "en": "architecture"
+  },
+  "[archaic]": {
+    "de": "altert\u00fcmlich",
+    "en": "archaic"
+  },
+  "[art]": {
+    "de": "Kunst",
+    "en": "arts"
+  },
+  "[astron.]": {
+    "de": "Astronomie",
+    "en": "astronomy"
+  },
+  "[auto]": {
+    "de": "Kraftfahrzeugwesen; Stra\u00dfenverkehr",
+    "en": "motoring; road traffic"
+  },
+  "[aviat.]": {
+    "de": "Luftfahrt; Flugzeug",
+    "en": "aviation; aircraft"
+  },
+  "[becoming dated]": {
+    "de": "veraltend; teilweise als altmodisch empfunden",
+    "en": "becoming dated; considered old-fashioned by some"
+  },
+  "[biochem.]": {
+    "de": "Biochemie",
+    "en": "biochemistry"
+  },
+  "[biol.]": {
+    "de": "Biologie",
+    "en": "biology"
+  },
+  "[bot.]": {
+    "de": "Botanik; Pflanzen",
+    "en": "botany; plants"
+  },
+  "[chem.]": {
+    "de": "Chemie",
+    "en": "chemistry"
+  },
+  "[children's speech]": {
+    "de": "Sprachgebrauch bei Gespr\u00e4chen mit oder unter Kindern",
+    "en": "usage when speaking to children or when children speak among themselves"
+  },
+  "[coll.]": {
+    "de": "umgangssprachlich",
+    "en": "colloquial"
+  },
+  "[comp.]": {
+    "de": "Computerwesen; EDV; Informatik",
+    "en": "computing; EDP; informatics"
+  },
+  "[constr.]": {
+    "de": "Bauwesen",
+    "en": "construction"
+  },
+  "[cook.]": {
+    "de": "Speisen; Kochen; Essen; Gastronomie",
+    "en": "dishes; cooking; eating; gastronomy "
+  },
+  "[dated]": {
+    "de": "veraltet; altmodisch",
+    "en": "dated; old-fashioned"
+  },
+  "[econ.]": {
+    "de": "\u00d6konomie; Wirtschaft",
+    "en": "economy"
+  },
+  "[electr.]": {
+    "de": "Elektrotechnik, Elektronik",
+    "en": "electrical engineering, electronics"
+  },
+  "[envir.]": {
+    "de": "Umwelt; \u00d6kologie; Umweltschutz",
+    "en": "environment; ecology; environmental protection "
+  },
+  "[euphem.]": {
+    "de": "euphemistisch",
+    "en": "euphemistic"
+  },
+  "[fig.]": {
+    "de": "\u00fcbertragen; bildlich",
+    "en": "figurative"
+  },
+  "[fin.]": {
+    "de": "Finanzwesen",
+    "en": "finance"
+  },
+  "[formal]": {
+    "de": "gehoben",
+    "en": "formal"
+  },
+  "[former name]": {
+    "de": "durch eine neue Bezeichnung ersetzte, ehemals offizielle Bezeichnung",
+    "en": "previously official term which was replaced by a new designation"
+  },
+  "[fr\u00fchere Bezeichnung]": {
+    "de": "durch eine neue Bezeichnung ersetzte, ehemals offizielle Bezeichnung",
+    "en": "previously official term which was replaced by a new designation"
+  },
+  "[geh.]": {
+    "de": "gehoben",
+    "en": "formal"
+  },
+  "[geogr.]": {
+    "de": "Geografie",
+    "en": "geography"
+  },
+  "[geol.]": {
+    "de": "Geologie",
+    "en": "geology"
+  },
+  "[hist.]": {
+    "de": "Geschichte; Historisches",
+    "en": "history"
+  },
+  "[humor.]": {
+    "de": "humoristisch; scherzhaft",
+    "en": "humorous; jocular"
+  },
+  "[hunters' parlance]": {
+    "de": "Fachjargon der J\u00e4ger",
+    "en": "jargon used by hunters"
+  },
+  "[iron.]": {
+    "de": "ironisch",
+    "en": "ironic"
+  },
+  "[jur.]": {
+    "de": "Recht, Jura",
+    "en": "law"
+  },
+  "[ling.]": {
+    "de": "Linguistik; Sprachwissenschaft",
+    "en": "linguistics"
+  },
+  "[lit.]": {
+    "de": "Literatur; literarisch",
+    "en": "literature; literarily"
+  },
+  "[mach.]": {
+    "de": "Maschinenbau",
+    "en": "machine construction"
+  },
+  "[math.]": {
+    "de": "Mathematik",
+    "en": "mathematics"
+  },
+  "[med.]": {
+    "de": "Medizin",
+    "en": "medicine"
+  },
+  "[meteo.]": {
+    "de": "Meteorologie; Wetterkunde; Klimakunde",
+    "en": "meteorology; climatology"
+  },
+  "[mil.]": {
+    "de": "Milit\u00e4r; Waffenkunde",
+    "en": "military; weaponry"
+  },
+  "[min.]": {
+    "de": "Mineralogie; Bergbau",
+    "en": "mineralogy; mining"
+  },
+  "[mus.]": {
+    "de": "Musik",
+    "en": "music"
+  },
+  "[myc.]": {
+    "de": "Mykologie; Pilze",
+    "en": "mycology; fungi"
+  },
+  "[naut.]": {
+    "de": "Nautik; Schifffahrtskunde",
+    "en": "nautical science; seafaring"
+  },
+  "[obs.]": {
+    "de": "obsolet; nicht mehr in Gebrauch",
+    "en": "obsolete; not longer used"
+  },
+  "[ornith.]": {
+    "de": "Ornithologie; Vogelkunde",
+    "en": "ornithology"
+  },
+  "[pej.]": {
+    "de": "absch\u00e4tzig; abwertend; pejorativ",
+    "en": "derogatory; pejorative"
+  },
+  "[pharm.]": {
+    "de": "Pharmakologie; Arzneimittelkunde",
+    "en": "pharmacology"
+  },
+  "[phil.]": {
+    "de": "Philosophie",
+    "en": "philosophy"
+  },
+  "[photo.]": {
+    "de": "Fotografie",
+    "en": "photography"
+  },
+  "[phys.]": {
+    "de": "Physik",
+    "en": "physics"
+  },
+  "[poet.]": {
+    "de": "dichterisch: literarisch; poetisch",
+    "en": "literary; poetic"
+  },
+  "[pol.]": {
+    "de": "Politik",
+    "en": "politics"
+  },
+  "[print]": {
+    "de": "Druckwesen",
+    "en": "printing"
+  },
+  "[prov.]": {
+    "de": "Sprichwort",
+    "en": "proverb"
+  },
+  "[psych.]": {
+    "de": "Psychologie",
+    "en": "psychology"
+  },
+  "[rare]": {
+    "de": "selten verwendet",
+    "en": "rarely used"
+  },
+  "[relig.]": {
+    "de": "Religion",
+    "en": "religion"
+  },
+  "[school]": {
+    "de": "Schule; Bildung; Ausbildung",
+    "en": "school; education; training "
+  },
+  "[sci.]": {
+    "de": "Wissenschaft",
+    "en": "science"
+  },
+  "[selten]": {
+    "de": "selten verwendet",
+    "en": "rarely used"
+  },
+  "[slang]": {
+    "de": "Szenejargon; Dialekt; regionaler Sprachgebrauch; derbe Ausdrucksweise",
+    "en": "slang; vernacular speech; regional language; coarse speech "
+  },
+  "[soc.]": {
+    "de": "Soziologie; Gesellschaftsleben",
+    "en": "sociology; social life "
+  },
+  "[sport]": {
+    "de": "Sport",
+    "en": "sports"
+  },
+  "[statist.]": {
+    "de": "Statistik",
+    "en": "statistics"
+  },
+  "[stud.]": {
+    "de": "Studium (Hochschule)",
+    "en": "studies (university)"
+  },
+  "[techn.]": {
+    "de": "Technik",
+    "en": "engineering"
+  },
+  "[telco.]": {
+    "de": "Telekommunikation",
+    "en": "telecommunications"
+  },
+  "[textil.]": {
+    "de": "Textilindustrie; Bekleidung",
+    "en": "textile industry; clothing"
+  },
+  "[transp.]": {
+    "de": "Transport; Logistik",
+    "en": "transportation; logistics"
+  },
+  "[ugs.]": {
+    "de": "umgangssprachlich",
+    "en": "colloquial"
+  },
+  "[veraltend]": {
+    "de": "veraltend; teilweise als altmodisch empfunden",
+    "en": "becoming dated; considered old-fashioned by some"
+  },
+  "[veraltet]": {
+    "de": "veraltet; altmodisch",
+    "en": "dated; old-fashioned"
+  },
+  "[vulg.]": {
+    "de": "unfl\u00e4tig; obsz\u00f6n; vulg\u00e4r",
+    "en": "vulgar; obscene"
+  },
+  "[youth speech]": {
+    "de": "Sprachgebrauch unter Jugendlichen",
+    "en": "usage when teenagers speak to each other"
+  },
+  "[zool.]": {
+    "de": "Zoologie; Tiere",
+    "en": "zoology; animals"
+  },
+  "[\u00d6s.]": {
+    "de": "Sprachgebrauch in \u00d6sterreich; Austriazismus",
+    "en": "Austrian usage; Austrian idiom"
+  },
+  "[\u00fcbtr.]": {
+    "de": "\u00fcbertragen; bildlich",
+    "en": "figurative"
+  },
+  "{adj}": {
+    "de": "Adjektiv",
+    "en": "adjective"
+  },
+  "{adv}": {
+    "de": "Adverb; Adverbialphrase",
+    "en": "adverb; adverbial phrase"
+  },
+  "{art}": {
+    "de": "Artikel",
+    "en": "article"
+  },
+  "{conj}": {
+    "de": "Konjunktion",
+    "en": "conjunction"
+  },
+  "{f}": {
+    "de": "Substantiv, weiblich (die)",
+    "en": "noun, feminine (die)"
+  },
+  "{interj}": {
+    "de": "Interjektion; Ausruf",
+    "en": "interjection"
+  },
+  "{m}": {
+    "de": "Substantiv, m\u00e4nnlich (der)",
+    "en": "noun, masculine (der)"
+  },
+  "{num}": {
+    "de": "Numeral, Zahlwort",
+    "en": "numeral"
+  },
+  "{n}": {
+    "de": "Substantiv, s\u00e4chlich (das)",
+    "en": "noun, neuter (das)"
+  },
+  "{pl}": {
+    "de": "Substantiv, Plural (die)",
+    "en": "noun, plural (die)"
+  },
+  "{ppron}": {
+    "de": "Personalpronomen",
+    "en": "personal pronoun"
+  },
+  "{pron}": {
+    "de": "Pronomen",
+    "en": "pronoun"
+  },
+  "{prp}": {
+    "de": "Pr\u00e4position",
+    "en": "preposition"
+  },
+  "{vi}": {
+    "de": "Verb, intransitiv",
+    "en": "verb, intransitive"
+  },
+  "{vr}": {
+    "de": "Verb, reflexiv",
+    "en": "verb, reflexive"
+  },
+  "{vt}": {
+    "de": "Verb, transitiv",
+    "en": "verb, transitive"
+  },
+  "{v}": {
+    "de": "Verb, sonstig oder Verbalphrase",
+    "en": "other verb, or verbal phrase"
+  },
+  "\u00ae": {
+    "de": "Markenzeichen",
+    "en": "trademark"
+  }
+}
