@@ -134,6 +134,13 @@ install:
 	@echo "To test the new dictionary, try Dictionary.app."
 	@afplay /System/Library/Sounds/Purr.aiff > /dev/null
 
+shasum:
+	@echo "Calculating SHA256 checksum for Homebrew Cask …"
+	@shasum -a 256 releases/$(VERSION)/$(DICT_NAME_NSPC)_dictionaryfile.zip | awk '{print $$1}'
+	@shasum -a 256 releases/$(VERSION)/$(DICT_NAME_NSPC)_dictionaryfile.zip | awk '{printf $$1}' | pbcopy
+	@open -a Nova /opt/homebrew/Library/Taps/tekl/homebrew-dictionaries
+	@open -a Nova /opt/homebrew/Library/Taps/tekl/homebrew-dictionaries/Casks/beolingus-deutsch-englisch.rb
+
 clean:
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)_leo
