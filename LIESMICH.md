@@ -1,8 +1,8 @@
 Beolingus Deutsch-Englisch Lexikon-Plug-in
 ------------------------------------------
 
-_Version: 2024.11.09 - OS X 10.11 bis macOS 15_  
-_Copyright © 2024 Wolfgang Kreutz und TU Chemnitz_
+_Version: 2025.01.21 - OS X 10.11 bis macOS 15_  
+_Copyright © 2025 Wolfgang Kreutz und TU Chemnitz_
 
 ![Screenshot](images/screenshots/Beolingus_Screen_1.png)
 

@@ -1,6 +1,6 @@
 ###########################
 # Makefile
-# for Beolingus Deutsch-Englisch v2024.11.09
+# for Beolingus Deutsch-Englisch v2025.01.21
 # by Wolfgang Kreutz
 # https://github.com/Tekl/beolingus-deutsch-englisch
 ###########################
