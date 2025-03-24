@@ -1,6 +1,6 @@
 ###########################
 # Makefile
-# for Beolingus Deutsch-Englisch v2025.01.21
+# for Beolingus Deutsch-Englisch v2025.03.24
 # by Wolfgang Kreutz
 # https://github.com/Tekl/beolingus-deutsch-englisch
 ###########################
@@ -116,7 +116,8 @@ releasedmg:
 notarize:
 	xcrun notarytool submit --keychain-profile 3D3Y3WDMYF --wait releases/$(VERSION)/$(DICT_NAME_NSPC).dmg
 	xcrun stapler staple releases/$(VERSION)/$(DICT_NAME_NSPC).dmg
-	$(MAKE) shasum
+	@echo "- use 'make shasum' to generate checksum for homebrew and open the ruby file in Nova"
+	@afplay /System/Library/Sounds/Purr.aiff > /dev/null
 
 install:
 	@echo "Installing into $(DESTINATION_FOLDER)".

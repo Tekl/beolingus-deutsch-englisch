@@ -3,7 +3,7 @@
 Beolingus German-English Dictionary Plugin
 ------------------------------------------
 
-_Version: 2025.01.21 - OS X 10.11 to macOS 15_  
+_Version: 2025.03.24 - OS X 10.11 to macOS 15_  
 _Copyright © 2025 Wolfgang Kreutz and TU Chemnitz_
 
 ![Screenshot](images/screenshots/Beolingus_Screen_1.png)
