@@ -4,7 +4,7 @@
 # DIESES SCRIPT BITTE NICHT MANUELL AUSFÜHREN
 # ES WIRD PER "MAKE" AUFGERUFEN
 
-import os, sys, time, re, codecs, datetime, urllib.request, urllib.parse, string, pickle, email.utils, json  # , subprocess, time
+import os, sys, time, re, datetime, urllib.request, urllib.parse, string, pickle, email.utils, json  # , subprocess, time
 
 def progress(a, b, c):
     sys.stdout.write(".")
@@ -125,7 +125,7 @@ os.system('gzip -d -f ' + dict + '.txt.gz')
 # downloadfileyear = datetime.datetime.today().strftime("%Y")
 
 print("\nDatei wird analysiert ...")
-sourcefile = codecs.open(dict + '.txt', 'r', 'UTF-8')
+sourcefile = open(dict + '.txt', 'r', encoding='UTF-8')
 sourcefile_content = re.sub(u'\u0085', '', sourcefile.read())
 sourcefile_content = re.sub(' ', ' ', sourcefile_content).splitlines()
 
@@ -467,7 +467,7 @@ for line in sorted(sourcefile_content):
 sourcefile.close()
 
 print("\nXML-Datei wird erzeugt ...")
-destfile = codecs.open(dictFull + '.xml', 'w', 'utf-8')
+destfile = open(dictFull + '.xml', 'w', encoding='utf-8')
 destfile.write("""<?xml version="1.0" encoding="utf-8"?>
 <d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">""")
 
@@ -601,9 +601,9 @@ rtfFiles = ['installer/Beolingus Deutsch-Englisch.pkgproj', 'installer/finishup_
 for filename in rtfFiles:
     print(filename)
     if '.rtf' in filename:
-        pmdocFile = codecs.open(filename, 'r', 'windows-1252')
+        pmdocFile = open(filename, 'r', encoding='windows-1252')
     else:
-        pmdocFile = codecs.open(filename, 'r', 'UTF-8')
+        pmdocFile = open(filename, 'r', encoding='UTF-8')
     pmdoc = pmdocFile.read()
     pmdoc = re.sub(r"Version: .\d+.\d+.\d+(-[Ll]egacy)?(-beta)?", "Version: " + bundleVersion, pmdoc)
     pmdoc = re.sub(r">20\d+.\d+.\d+(-[Ll]egacy)?(-beta)?<", ">" + bundleVersion + "<", pmdoc)
@@ -619,14 +619,14 @@ for filename in rtfFiles:
         pmdoc = re.sub(r"<integer>\d\d\d\d00</integer>", "<integer>" + osVersionMinInt + "</integer>", pmdoc)
     pmdocFile.close()
     if '.rtf' in filename:
-        pmdocFile = codecs.open(filename, 'w', 'windows-1252')
+        pmdocFile = open(filename, 'w', encoding='windows-1252')
     else:
-        pmdocFile = codecs.open(filename, 'w', 'UTF-8')
+        pmdocFile = open(filename, 'w', encoding='UTF-8')
     pmdocFile.write(pmdoc)
     pmdocFile.close()
 
 print("Info.plist")
-plistFile = codecs.open('Info.plist', 'r', 'UTF-8')
+plistFile = open('Info.plist', 'r', encoding='UTF-8')
 plist = plistFile.read()
 plist = re.sub(r"(?u)(<key>CFBundleVersion</key>\s+<string>)[^<]+(</string>)", "\\g<1>" + bundleVersion + "\\2", plist)
 plist = re.sub(r"(?u)(<key>CFBundleShortVersionString</key>\s+<string>)[^<]+(</string>)", "\\g<1>" + bundleVersion + "\\2", plist)
@@ -636,7 +636,7 @@ plist = re.sub(r"version=\d\d\d\d\.\d+\.\d+(-[Ll]egacy)?(-beta)?", "version=" + 
 plist = re.sub(r" v\d\d\d\d\.\d+\.\d+(-[Ll]egacy)?(-beta)?", " v" + bundleVersion, plist)
 plist = re.sub(r"<string>\d\d\.\d+</string>", "<string>" + osVersionMin + "</string>", plist)
 plistFile.close()
-plistFile = codecs.open('Info.plist', 'w', 'UTF-8')
+plistFile = open('Info.plist', 'w', encoding='UTF-8')
 plistFile.write(plist)
 plistFile.close()
 
