@@ -3,8 +3,8 @@
 Beolingus German-English Dictionary Plugin
 ------------------------------------------
 
-_Version: 2025.03.24 - OS X 10.11 to macOS 26_  
-_Copyright © 2025 Wolfgang Kreutz and TU Chemnitz_
+_Version: 2026.03.07 - OS X 10.11 to macOS 26_  
+_Copyright © 2026 Wolfgang Kreutz and TU Chemnitz_
 
 ![Screenshot](images/screenshots/Beolingus_Screen_1.png)
 
@@ -17,7 +17,7 @@ The Python script to convert the Beolingus dictionary into a dictionary plugin w
 **Website with further information:** [www.tekl.de](https://tekl.de).  
 **Support and source code:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)  
 **Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)  
-**Donation:** [PayPal](https://www.paypal.me/WolfgangKreutz64)
+**Tip:** [PayPal](https://www.paypal.me/WolfgangKreutz64)
 
 ### Download
 

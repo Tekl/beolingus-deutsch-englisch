@@ -1,7 +1,7 @@
 Beolingus Deutsch-Englisch Lexikon-Plug-in
 ------------------------------------------
 
-_Version: 2026.01.06 - OS X 10.11 bis macOS 26_  
+_Version: 2026.03.07 - OS X 10.11 bis macOS 26_  
 _Copyright © 2026 Wolfgang Kreutz und TU Chemnitz_
 
 ![Screenshot](images/screenshots/Beolingus_Screen_1.png)
@@ -15,7 +15,7 @@ Das Python-Skript zur Umwandlung der Beolingus-Wörterbuchdatei in ein Apple-Lex
 **Website mit weiterführenden Informationen:** [www.tekl.de](https://tekl.de).  
 **Support und Quellcode:** [github.com/Tekl/beolingus-deutsch-englisch](https://github.com/Tekl/beolingus-deutsch-englisch)  
 **Changelog:** [CHANGELOG.md](https://github.com/Tekl/beolingus-deutsch-englisch/blob/master/CHANGELOG.md)  
-**Spende:** [PayPal](https://www.paypal.me/WolfgangKreutz64)
+**Trinkgeld:** [PayPal](https://www.paypal.me/WolfgangKreutz64)
 
 ### Download
 

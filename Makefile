@@ -1,6 +1,6 @@
 ###########################
 # Makefile
-# for Beolingus Deutsch-Englisch v2026.01.06
+# for Beolingus Deutsch-Englisch v2026.03.07
 # by Wolfgang Kreutz
 # https://github.com/Tekl/beolingus-deutsch-englisch
 ###########################
@@ -78,6 +78,8 @@ build:
 	@$(DICT_BUILD_TOOL_BIN)/build_dict.sh $(DICT_BUILD_OPTS) "$(DICT_NAME)" "$(DICT_SRC_PATH)" "$(CSS_PATH)" "$(PLIST_PATH)"
 	@mkdir "$(DICT_DEV_KIT_OBJ_DIR)/Dictionaries"
 	@mkdir releases/$(VERSION)/ | true
+	@sips -i images/icons/dictplug.icns
+	@DeRez -only icns images/icons/dictplug.icns > images/icons/dictplug.rsrc
 	@Rez -a images/icons/dictplug.rsrc -o "$(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary/Icon"$$'\r'
 	@SetFile -a C "$(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary"
 	@SetFile -a V "$(DICT_DEV_KIT_OBJ_DIR)/$(DICT_NAME).dictionary/Icon"$$'\r'
